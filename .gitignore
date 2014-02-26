@@ -1,0 +1,5 @@
+.ruby-version
+.ruby-gemset
+.rvmrc
+*.gemspec
+pkg
