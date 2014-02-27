@@ -3,3 +3,4 @@
 .rvmrc
 *.gemspec
 pkg
+Gemfile.lock
