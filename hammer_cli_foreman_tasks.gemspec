@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.unshift(File.expand_path('../lib', __FILE__))
 
 # Maintain your gem's version:
 require "hammer_cli_foreman_tasks/version"
@@ -7,7 +7,7 @@ require "hammer_cli_foreman_tasks/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "hammer_cli_foreman_tasks"
-  s.version     = HammerCLIForemanTasks::VERSION
+  s.version     = HammerCLIForemanTasks.version
   s.authors     = ["Ivan Nečas"]
   s.license     = "GPL-3"
   s.email       = ["inecas@redhat.com"]
