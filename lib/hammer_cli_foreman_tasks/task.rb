@@ -1,12 +1,17 @@
 module HammerCLIForemanTasks
-  class Task < HammerCLI::AbstractCommand
+  class Task < HammerCLIForeman::Command
+
+    resource :foreman_tasks
+
     class ProgressCommand < HammerCLIForeman::ReadCommand
 
       include HammerCLIForemanTasks::Helper
 
+      action :show
+      apipie_options
+
       command_name "progress"
       desc "Show the progress of the task"
-      option '--id', "UUID", "UUID of the task", :required => true
 
       def execute
         task_progress(option_id)
