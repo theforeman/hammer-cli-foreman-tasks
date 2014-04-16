@@ -3,7 +3,7 @@ module HammerCLIForemanTasks
 
     resource :foreman_tasks
 
-    class ProgressCommand < HammerCLIForeman::ReadCommand
+    class ProgressCommand < HammerCLIForeman::Command
 
       include HammerCLIForemanTasks::Helper
 
