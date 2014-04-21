@@ -13,6 +13,6 @@ module HammerCLIForemanTasks
       end
     end
 
-    apipie_options
+    build_options
   end
 end

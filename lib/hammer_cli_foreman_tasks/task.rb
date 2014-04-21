@@ -8,7 +8,7 @@ module HammerCLIForemanTasks
       include HammerCLIForemanTasks::Helper
 
       action :show
-      apipie_options
+      build_options
 
       command_name "progress"
       desc "Show the progress of the task"
