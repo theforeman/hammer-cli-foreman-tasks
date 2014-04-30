@@ -15,7 +15,7 @@ class MyAsyncCommand < HammerCLIForemanTasks::AsyncCommand
   success_message "Task started with id %{id}s"
   failure_message "Could not run the task"
 
-  apipie_options
+  build_options
 end
 ```
 

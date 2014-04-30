@@ -1,5 +1,5 @@
 module HammerCLIForemanTasks
-  class AsyncCommand < HammerCLIForeman::WriteCommand
+  class AsyncCommand < HammerCLIForeman::Command
     include HammerCLIForemanTasks::Helper
 
     option '--async', :flag, 'Do not wait for the task'
@@ -13,6 +13,6 @@ module HammerCLIForemanTasks
       end
     end
 
-    apipie_options
+    build_options
   end
 end
