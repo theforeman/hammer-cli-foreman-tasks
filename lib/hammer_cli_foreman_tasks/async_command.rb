@@ -1,8 +1,11 @@
 module HammerCLIForemanTasks
-  class AsyncCommand < HammerCLIForeman::Command
-    include HammerCLIForemanTasks::Helper
 
-    option '--async', :flag, 'Do not wait for the task'
+  module Async
+
+    def self.included(base)
+      base.send(:include, HammerCLIForemanTasks::Helper)
+      base.send(:option, '--async', :flag, 'Do not wait for the task')
+    end
 
     def execute
       if option_async?
@@ -12,6 +15,11 @@ module HammerCLIForemanTasks
         HammerCLI::EX_OK
       end
     end
+
+  end
+
+  class AsyncCommand < HammerCLIForeman::Command
+    include HammerCLIForemanTasks::Async
 
     build_options
   end

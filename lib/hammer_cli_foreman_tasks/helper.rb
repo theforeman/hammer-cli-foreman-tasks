@@ -1,10 +1,6 @@
 module HammerCLIForemanTasks
   module Helper
 
-    def included(base)
-      base.send(:include, HammerCLI::Apipie::Resource)
-    end
-
     # render the progress of the task using polling to the task API
     def task_progress(task_or_id)
       task_id = task_or_id.is_a?(Hash) ? task_or_id['id'] : task_or_id
