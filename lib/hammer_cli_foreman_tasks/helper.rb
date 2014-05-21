@@ -13,5 +13,12 @@ module HammerCLIForemanTasks
       self.class.resource(:foreman_tasks).call(:show, :id => id)
     end
 
+    def task_to_plan_id(id)
+      begin
+        load_task(id)["input"]["label"]["execution_plan_id"]
+      rescue
+        raise "No task with id '#{id}'"
+      end
+    end
   end
 end
