@@ -19,6 +19,6 @@ DESC
 
   s.files = Dir["lib/**/*", "LICENSE", "README.md"]
 
-  s.add_dependency "powerbar"
-  s.add_dependency "hammer_cli_foreman"
+  s.add_dependency "powerbar", "~> 1.0.11"
+  s.add_dependency "hammer_cli_foreman", "~> 0.1.1"
 end
