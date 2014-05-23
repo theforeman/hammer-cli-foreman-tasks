@@ -21,4 +21,5 @@ DESC
 
   s.add_dependency "powerbar"
   s.add_dependency "hammer_cli_foreman"
+  s.add_dependency "minitar"
 end
