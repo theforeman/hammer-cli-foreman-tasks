@@ -22,8 +22,8 @@ module HammerCLIForemanTasks
 
     class TaskExportCommand < HammerCLIForeman::Command
 
-			require 'zlib'
-			require 'archive/tar/minitar'
+      require 'zlib'
+      require 'archive/tar/minitar'
 
       include HammerCLIForemanTasks::Helper
 
@@ -36,15 +36,15 @@ module HammerCLIForemanTasks
       option ["-a", "--on-all"], :flag, "Operate on all tasks"
       option ["-f", "--full"], :flag, "Export task WITH all actions"
 
-			@output = HammerCLI::Output::Output.new
+      @output = HammerCLI::Output::Output.new
 
       validate_options do
         any(:option_task_id, :option_exec_plan_id, :option_on_paused, :option_on_all).required
       end
 
       def execute
-				dest = File.expand_path(option_dir)
-				plan_ids = load_plan_ids
+        dest = File.expand_path(option_dir)
+        plan_ids = load_plan_ids
         plan_ids.each { |plan_id| export_plan(plan_id, dest, option_full?) }
         HammerCLI::EX_OK
       end
@@ -53,25 +53,25 @@ module HammerCLIForemanTasks
         MultiJson.load(only_paused ? DynflowBinding.get_paused_plans : DynflowBinding.get_all_plans)
       end
 
-			def load_plan_ids
+      def load_plan_ids
         plan_ids = get_all_ids if option_on_all?
         plan_ids = get_all_ids(true) if option_on_paused?
         plan_ids ||= []
         plan_ids << option_exec_plan_id
         plan_ids << option_task_id.map { |task_id| task_to_plan_id(task_id) } unless option_task_id.nil?
-				plan_ids.flatten.uniq.compact
-			end
-
+        plan_ids.flatten.uniq.compact
+      end
+      
       def export_plan(plan_id, path, with_action = false)
         Dir.mktmpdir do |tmp|
           Dir.chdir(tmp)
-					plan_js = dump_plan(plan_id)
+          plan_js = dump_plan(plan_id)
           dump_plan_actions(plan_js) if with_action
           if option_compression?
             compress(plan_id)
             FileUtils.cp("#{plan_id}.tar.gz", path)
           else
-						FileUtils.mkdir_p(path) unless File.exists?(path)
+            FileUtils.mkdir_p(path) unless File.exists?(path)
             FileUtils.cp_r(plan_id, path)
           end
         end
@@ -79,16 +79,16 @@ module HammerCLIForemanTasks
 
       def dump_plan(plan_id)
         FileUtils.mkdir_p(plan_id) unless File.exist?(plan_id)
-				begin
-					plan_js = DynflowBinding.get_execution_plan(plan_id)
-				rescue Exception => e
-					raise e unless e.http_code == 404
-					err = e.message + " - " + e.response
-					@output.print_error err
-					logger.error err
-				end
+        begin
+          plan_js = DynflowBinding.get_execution_plan(plan_id)
+        rescue Exception => e
+          raise e unless e.http_code == 404
+          err = e.message + " - " + e.response
+          @output.print_error err
+          logger.error err
+        end
         File.write("#{plan_id}/plan.json", plan_js)
-				plan_js
+        plan_js
       end
 
       def compress(target)
@@ -104,8 +104,8 @@ module HammerCLIForemanTasks
       end
 
     end
-	
-		self.subcommand 'action', "Manipulate task's actions", HammerCLIForemanTasks::Action
+    
+    self.subcommand 'action', "Manipulate task's actions", HammerCLIForemanTasks::Action
 
     autoload_subcommands
   end
