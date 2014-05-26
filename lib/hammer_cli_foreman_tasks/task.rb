@@ -19,6 +19,27 @@ module HammerCLIForemanTasks
       end
 
     end
+    
+    class TaskViewCommand < HammerCLIForeman::Command
+      
+      command_name 'view'
+
+      option ['-f', '--file'], "FILE", "Archive to add to viewer",
+      :format => HammerCLI::Options::Normalizers::List.new,
+      :required => true
+      
+      def execute
+        require 'pry'; binding.pry
+        option_file.each { |file| DynflowBinding.upload(load_archive(file)) }
+        HammerCLI::EX_OK
+      end
+
+      def load_archive(file)
+        {
+          :upload => File.new(file, 'rb')
+        }
+      end
+    end
 
     class TaskExportCommand < HammerCLIForeman::Command
 
@@ -49,13 +70,17 @@ module HammerCLIForemanTasks
         HammerCLI::EX_OK
       end
 
-      def get_all_ids(only_paused = false)
-        MultiJson.load(only_paused ? DynflowBinding.get_paused_plans : DynflowBinding.get_all_plans)
+      def all_ids
+        MultiJson.load(DynflowBinding.get_all_plans)
+      end
+
+      def paused_ids
+        MultiJson.load(DynflowBinding.get_paused_plans)
       end
 
       def load_plan_ids
-        plan_ids = get_all_ids if option_on_all?
-        plan_ids = get_all_ids(true) if option_on_paused?
+        plan_ids = all_ids if option_on_all?
+        plan_ids = paused_ids if option_on_paused?
         plan_ids ||= []
         plan_ids << option_exec_plan_id
         plan_ids << option_task_id.map { |task_id| task_to_plan_id(task_id) } unless option_task_id.nil?
