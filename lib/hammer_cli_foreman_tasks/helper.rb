@@ -14,13 +14,13 @@ module HammerCLIForemanTasks
     end
 
     def task_to_plan_id(id)
-				require 'pry'; binding.pry
+      require 'pry'; binding.pry
       begin
         load_task(id).fetch("external_id")
-			rescue KeyError => e
-				err = "Cannot find plan with task id #{id}"
-				HammerCLI::Output::Output.new.print_error err
-				logger.error err
+      rescue KeyError => e
+        err = "Cannot find plan with task id #{id}"
+        HammerCLI::Output::Output.new.print_error err
+        logger.error err
        	return nil
       end
     end

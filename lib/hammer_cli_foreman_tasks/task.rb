@@ -23,14 +23,18 @@ module HammerCLIForemanTasks
     class TaskViewCommand < HammerCLIForeman::Command
       
       command_name 'view'
+      action :knock
+      build_options
 
       option ['-f', '--file'], "FILE", "Archive to add to viewer",
       :format => HammerCLI::Options::Normalizers::List.new,
       :required => true
+
+      option '--viewer', :flag, "Use viewer instead of regular Dynflow"
       
       def execute
-        require 'pry'; binding.pry
-        option_file.each { |file| DynflowBinding.upload(load_archive(file)) }
+        @dynflow_binding = DynflowBinding.new(option_viewer?)
+        option_file.each { |file| @dynflow_binding.upload(load_archive(file)) }
         HammerCLI::EX_OK
       end
 
@@ -49,6 +53,7 @@ module HammerCLIForemanTasks
       include HammerCLIForemanTasks::Helper
 
       command_name 'export'
+
       option ["-t", "--task-id"], "TASK_ID", "ID of task to export", :format => HammerCLI::Options::Normalizers::List.new
       option ["-e", "--exec-plan-id"], "PLAN_ID", "ID of plan to export",  :format => HammerCLI::Options::Normalizers::List.new
       option ["-p", "--on-paused"], :flag, "Operate on all paused tasks"
@@ -56,6 +61,7 @@ module HammerCLIForemanTasks
       option ["-d", "--dir"], "DIR", "Output to DIR", :default => './'
       option ["-a", "--on-all"], :flag, "Operate on all tasks"
       option ["-f", "--full"], :flag, "Export task WITH all actions"
+      option "--viewer", :flag, "Use viewer instead of regular Dynflow"
 
       @output = HammerCLI::Output::Output.new
 
@@ -64,6 +70,7 @@ module HammerCLIForemanTasks
       end
 
       def execute
+        @dynflow_binding = DynflowBinding.new(option_viewer?)
         dest = File.expand_path(option_dir)
         plan_ids = load_plan_ids
         plan_ids.each { |plan_id| export_plan(plan_id, dest, option_full?) }
@@ -71,11 +78,11 @@ module HammerCLIForemanTasks
       end
 
       def all_ids
-        MultiJson.load(DynflowBinding.get_all_plans)
+        MultiJson.load(@dynflow_binding.get_all_plans)
       end
 
       def paused_ids
-        MultiJson.load(DynflowBinding.get_paused_plans)
+        MultiJson.load(@dynflow_binding.get_paused_plans)
       end
 
       def load_plan_ids
@@ -105,7 +112,7 @@ module HammerCLIForemanTasks
       def dump_plan(plan_id)
         FileUtils.mkdir_p(plan_id) unless File.exist?(plan_id)
         begin
-          plan_js = DynflowBinding.get_execution_plan(plan_id)
+          plan_js = @dynflow_binding.get_execution_plan(plan_id)
         rescue Exception => e
           raise e unless e.http_code == 404
           err = e.message + " - " + e.response

@@ -13,6 +13,7 @@ module HammerCLIForemanTasks
              :required => true,
              :format => HammerCLI::Options::Normalizers::List.new
       option ["-d", "--dir"], "DIR", "Output to DIR", :default => '.'
+      option "--viewer", :flag, "Use viewer instead of regular Dynflow"
 
       validate_options do
         any(:option_task_id, :option_exec_plan_id).required
@@ -20,6 +21,7 @@ module HammerCLIForemanTasks
       end
 
       def execute
+        @dynflow_binding = DynflowBinding.new(option_viewer)
         plan_id = option_exec_plan_id.nil? ? task_to_plan_id(option_task_id) : option_exec_plan_id
 				plan_id.nil? && exit(HammerCLI::EX_NOT_FOUND)
         path = File.expand_path(option_dir.gsub(/\/$/,''))
@@ -42,7 +44,7 @@ module HammerCLIForemanTasks
       def self.dump_action(plan_id, action_id)
         begin
           File.write("#{plan_id}/action-#{action_id}.json",
-                     DynflowBinding.get_action(plan_id, action_id))
+                     @dynflow_binding.get_action(plan_id, action_id))
         rescue Exception => e
           File.exists?("#{plan_id}/action-#{action_id}.json") && File.delete("#{plan_id}/action-#{action_id}.json")
 					raise e unless e.http_code == 404
