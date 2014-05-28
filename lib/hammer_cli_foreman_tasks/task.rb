@@ -23,10 +23,10 @@ module HammerCLIForemanTasks
     class TaskViewCommand < HammerCLIForeman::Command
       
       command_name 'view'
-      action :knock
+
       build_options
 
-      option ['-f', '--file'], "FILE", "Archive to add to viewer",
+      option ['-f', '--file'], "FILE", "Archive(s) to add to viewer",
       :format => HammerCLI::Options::Normalizers::List.new,
       :required => true
 
@@ -39,6 +39,7 @@ module HammerCLIForemanTasks
       end
 
       def load_archive(file)
+        # TODO accept folders
         {
           :upload => File.new(file, 'rb')
         }
@@ -54,8 +55,8 @@ module HammerCLIForemanTasks
 
       command_name 'export'
 
-      option ["-t", "--task-id"], "TASK_ID", "ID of task to export", :format => HammerCLI::Options::Normalizers::List.new
-      option ["-e", "--exec-plan-id"], "PLAN_ID", "ID of plan to export",  :format => HammerCLI::Options::Normalizers::List.new
+      option ["-t", "--task-id"], "TASK_ID", "ID(s) of task to export", :format => HammerCLI::Options::Normalizers::List.new
+      option ["-e", "--exec-plan-id"], "PLAN_ID", "ID(s) of plan to export",  :format => HammerCLI::Options::Normalizers::List.new
       option ["-p", "--on-paused"], :flag, "Operate on all paused tasks"
       option ["-c", "--compression"], :flag, "Use gzip compression"
       option ["-d", "--dir"], "DIR", "Output to DIR", :default => './'
