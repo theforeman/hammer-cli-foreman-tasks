@@ -14,12 +14,8 @@ module HammerCLIForemanTasks
       @resource[plan_id].get
     end
     
-    def get_all_plans
-      @resource.post({})
-    end
-    
-    def get_paused_plans
-      @resource.post(:filters => {'state' => 'paused'})
+    def get_plan_ids(options = {}) 
+      @resource.post(options)
     end
     
     def get_action(plan_id, action_id)

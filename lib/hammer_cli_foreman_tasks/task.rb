@@ -20,32 +20,6 @@ module HammerCLIForemanTasks
 
     end
     
-    class TaskViewCommand < HammerCLIForeman::Command
-      
-      command_name 'view'
-
-      build_options
-
-      option ['-f', '--file'], "FILE", "Archive(s) to add to viewer",
-      :format => HammerCLI::Options::Normalizers::List.new,
-      :required => true
-
-      option '--viewer', :flag, "Use viewer instead of regular Dynflow"
-      
-      def execute
-        @dynflow_binding = DynflowBinding.new(option_viewer?)
-        option_file.each { |file| @dynflow_binding.upload(load_archive(file)) }
-        HammerCLI::EX_OK
-      end
-
-      def load_archive(file)
-        # TODO accept folders
-        {
-          :upload => File.new(file, 'rb')
-        }
-      end
-    end
-
     class TaskExportCommand < HammerCLIForeman::Command
 
       require 'zlib'
@@ -54,6 +28,7 @@ module HammerCLIForemanTasks
       include HammerCLIForemanTasks::Helper
 
       command_name 'export'
+      desc 'Export tasks and actions'
 
       option ["-t", "--task-id"], "TASK_ID", "ID(s) of task to export", :format => HammerCLI::Options::Normalizers::List.new
       option ["-e", "--exec-plan-id"], "PLAN_ID", "ID(s) of plan to export",  :format => HammerCLI::Options::Normalizers::List.new
@@ -79,11 +54,11 @@ module HammerCLIForemanTasks
       end
 
       def all_ids
-        MultiJson.load(@dynflow_binding.get_all_plans)
+        MultiJson.load(@dynflow_binding.get_plan_ids)
       end
 
       def paused_ids
-        MultiJson.load(@dynflow_binding.get_paused_plans)
+        MultiJson.load(@dynflow_binding.get_plans_ids(:filters => {'state' => 'paused'}))
       end
 
       def load_plan_ids
@@ -124,12 +99,6 @@ module HammerCLIForemanTasks
         plan_js
       end
 
-      def compress(target)
-        archive = "#{target}.tar.gz"
-        tgz = Zlib::GzipWriter.new(File.open(archive, 'wb'))
-        Archive::Tar::Minitar.pack(target, tgz)
-      end
-
       def dump_plan_actions(plan_js)
         plan = MultiJson.load(plan_js, :symbolize_keys => true)
         action_ids = plan[:steps].map { |step| step[:action_id] }.uniq
@@ -137,8 +106,9 @@ module HammerCLIForemanTasks
       end
 
     end
-    
+
     self.subcommand 'action', "Manipulate task's actions", HammerCLIForemanTasks::Action
+    self.subcommand 'viewer', "Work with the viewer", HammerCLIForemanTasks::Viewer
 
     autoload_subcommands
   end

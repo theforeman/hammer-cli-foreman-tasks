@@ -24,5 +24,11 @@ module HammerCLIForemanTasks
        	return nil
       end
     end
+
+    def compress(target, dest='.')
+      archive = "#{dest}/#{target}.tar.gz"
+      tgz = Zlib::GzipWriter.new(File.open(archive, 'wb'))
+      Archive::Tar::Minitar.pack(target, tgz)
+    end
   end
 end
