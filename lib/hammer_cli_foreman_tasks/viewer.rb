@@ -49,7 +49,10 @@ module HammerCLIForemanTasks
         begin
           @dynflow_binding.upload(load_archive(file))
         rescue Exception => e
-          #tbfl
+          raise e unless e.http_code == 406
+          err = e.message + " - " + e.response
+          @output.print_error err
+          logger.error err
         end
       end      
 

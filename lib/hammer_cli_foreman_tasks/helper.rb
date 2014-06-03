@@ -14,7 +14,6 @@ module HammerCLIForemanTasks
     end
 
     def task_to_plan_id(id)
-      require 'pry'; binding.pry
       begin
         load_task(id).fetch("external_id")
       rescue KeyError => e
