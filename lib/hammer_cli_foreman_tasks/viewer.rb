@@ -14,6 +14,7 @@ module HammerCLIForemanTasks
         field :required, _("Required"), Fields::Boolean
         field :initialized, _("Initialized"), Fields::Boolean
         field :started_at, _("Started at"), Fields::Date
+        field :plan_count, _("Plan count")
       end
 
       build_options
