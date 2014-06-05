@@ -29,7 +29,9 @@ module HammerCLIForemanTasks
       rescue Exception => e
        log_error(e)
       end
-      File.write("#{plan_id}/plan.json", plan_js)
+      File.open("#{plan_id}/plan.json", 'w') do |plan_file|
+        plan_file.write(plan_js)
+      end
       plan_js
     end
 
@@ -60,8 +62,9 @@ module HammerCLIForemanTasks
 
     def dump_action(plan_id, action_id, dynflow_binding = @dynflow_binding)
       begin
-        File.write("#{plan_id}/action-#{action_id}.json",
-                   dynflow_binding.get_action(plan_id, action_id))
+        File.open("#{plan_id}/action-#{action_id}.json", 'w') do |action_file|
+          action_file.write(dynflow_binding.get_action(plan_id, action_id))
+        end
       rescue Exception => e
         File.exists?("#{plan_id}/action-#{action_id}.json") && File.delete("#{plan_id}/action-#{action_id}.json")
         log_error(e)

@@ -25,6 +25,8 @@ module HammerCLIForemanTasks
       require 'zlib'
       require 'archive/tar/minitar'
 
+      include HammerCLIForemanTasks::Helper
+
       command_name 'export'
       desc 'Export tasks and actions'
 
