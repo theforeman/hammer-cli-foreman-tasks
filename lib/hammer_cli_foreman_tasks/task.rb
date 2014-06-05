@@ -25,8 +25,6 @@ module HammerCLIForemanTasks
       require 'zlib'
       require 'archive/tar/minitar'
 
-      include HammerCLIForemanTasks::Helper
-
       command_name 'export'
       desc 'Export tasks and actions'
 
@@ -46,10 +44,15 @@ module HammerCLIForemanTasks
       end
 
       def execute
-        @dynflow_binding = DynflowBinding.new(option_viewer?)
         dest = File.expand_path(option_dir)
         plan_ids = load_plan_ids
-        plan_ids.each { |plan_id| export_plan(plan_id, dest, option_full?) }
+        exporter = Exporter.new(logger, option_viewer?)
+        plan_ids.each do |plan_id|
+          exporter.export_plan(plan_id,
+                               dest,
+                               option_full?,
+                               option_compression?)
+        end
         HammerCLI::EX_OK
       end
 
@@ -68,41 +71,6 @@ module HammerCLIForemanTasks
         plan_ids << option_exec_plan_id
         plan_ids << option_task_id.map { |task_id| task_to_plan_id(task_id) } unless option_task_id.nil?
         plan_ids.flatten.uniq.compact
-      end
-      
-      def export_plan(plan_id, path, with_action = false)
-        Dir.mktmpdir do |tmp|
-          Dir.chdir(tmp)
-          plan_js = dump_plan(plan_id)
-          dump_plan_actions(plan_js) if with_action
-          if option_compression?
-            compress(plan_id)
-            FileUtils.cp("#{plan_id}.tar.gz", path)
-          else
-            FileUtils.mkdir_p(path) unless File.exists?(path)
-            FileUtils.cp_r(plan_id, path)
-          end
-        end
-      end
-
-      def dump_plan(plan_id)
-        FileUtils.mkdir_p(plan_id) unless File.exist?(plan_id)
-        begin
-          plan_js = @dynflow_binding.get_execution_plan(plan_id)
-        rescue Exception => e
-          raise e unless e.http_code == 404
-          err = e.message + " - " + e.response
-          @output.print_error err
-          logger.error err
-        end
-        File.write("#{plan_id}/plan.json", plan_js)
-        plan_js
-      end
-
-      def dump_plan_actions(plan_js)
-        plan = MultiJson.load(plan_js, :symbolize_keys => true)
-        action_ids = plan[:steps].map { |step| step[:action_id] }.uniq
-        action_ids.each { |action_id| Action::ActionExportCommand.dump_action(plan[:id], action_id) }
       end
 
     end

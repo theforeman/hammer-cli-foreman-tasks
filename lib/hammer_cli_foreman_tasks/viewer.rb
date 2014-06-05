@@ -20,12 +20,12 @@ module HammerCLIForemanTasks
       build_options
     end
 
-    class DropCommand < HammerCLIForeman::DeleteCommand
+    class DropCommand < HammerCLIForeman::Command
       
       command_name 'drop'
       desc 'Drop all tasks from viewer'
 
-      build_options      
+			action :destroy
 
     end
     
