@@ -1,9 +1,9 @@
 module HammerCLIForemanTasks
   class Exporter
     
-    def initialize(logger, viewer = false)
+    def initialize(logger, dynflow_binding)
       @logger = logger
-      @dynflow_binding = DynflowBinding.new(viewer)
+      @dynflow_binding = dynflow_binding
       @output ||= HammerCLI::Output::Output.new
     end
 
@@ -27,13 +27,17 @@ module HammerCLIForemanTasks
       begin
         plan_js = @dynflow_binding.get_execution_plan(plan_id)
       rescue Exception => e
-        raise e unless e.http_code == 404
-        err = e.message + " - " + e.response
-        @output.print_error err
-        @logger.error err
+       log_error(e)
       end
       File.write("#{plan_id}/plan.json", plan_js)
       plan_js
+    end
+
+    def log_error(e)
+      raise e if e.http_code.nil? || e.http_code != 404
+      err = e.message + ":\n  " + e.response
+      @output.print_error err
+      @logger.error err
     end
 
     def dump_plan_actions(plan_js)
@@ -60,10 +64,7 @@ module HammerCLIForemanTasks
                    dynflow_binding.get_action(plan_id, action_id))
       rescue Exception => e
         File.exists?("#{plan_id}/action-#{action_id}.json") && File.delete("#{plan_id}/action-#{action_id}.json")
-        raise e unless e.http_code == 404
-        err = e.message + " - " + e.response
-        @output.print_error err
-        @logger.error err
+        log_error(e)
       end
     end
 

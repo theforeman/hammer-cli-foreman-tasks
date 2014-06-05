@@ -25,7 +25,7 @@ module HammerCLIForemanTasks
       command_name 'drop'
       desc 'Drop all tasks from viewer'
 
-			action :destroy
+      action :destroy
 
     end
     

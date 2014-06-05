@@ -21,7 +21,8 @@ module HammerCLIForemanTasks
       end
 
       def execute
-        exporter = Exporter.new(logger, option_viewer?)
+        @dynflow_binding = DynflowBinding.new(option_viewer?)
+        exporter = Exporter.new(logger, @dynflow_binding)
         plan_id = option_exec_plan_id.nil? ? task_to_plan_id(option_task_id) : option_exec_plan_id
         plan_id.nil? && exit(HammerCLI::EX_NOT_FOUND)
         path = File.expand_path(option_dir.gsub(/\/$/,''))
