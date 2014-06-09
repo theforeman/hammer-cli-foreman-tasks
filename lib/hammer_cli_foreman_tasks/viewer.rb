@@ -13,7 +13,6 @@ module HammerCLIForemanTasks
       output HammerCLIForeman::InfoCommand.output_definition do
         field :required, _("Required"), Fields::Boolean
         field :initialized, _("Initialized"), Fields::Boolean
-        field :started_at, _("Started at"), Fields::Date
         field :plan_count, _("Plan count")
       end
 
@@ -26,7 +25,6 @@ module HammerCLIForemanTasks
       desc 'Drop all tasks from viewer'
 
       action :destroy
-
     end
     
     class AddCommand < HammerCLIForeman::Command
@@ -36,13 +34,11 @@ module HammerCLIForemanTasks
       command_name 'add'
       desc 'Add exported tasks to viewer'
 
-      option ['-f', '--file'], "FILE", "Archive(s) to add to viewer",
-      :format => HammerCLI::Options::Normalizers::List.new,
-      :required => true
+      parameter 'FILE ...', 'Archive(s) to add to viewer', :attribute_name => 'parameter_files'
 
       def execute
         @dynflow_binding = DynflowBinding.new(true)
-        option_file.each { |file| upload(file) }
+        parameter_files.each { |file| upload(file) }
         HammerCLI::EX_OK
       end
 

@@ -1,12 +1,11 @@
 module HammerCLIForemanTasks
   class Task < HammerCLIForeman::Command
 
-    resource :foreman_tasks
-
     class ProgressCommand < HammerCLIForeman::Command
 
       include HammerCLIForemanTasks::Helper
 
+      resource :foreman_tasks
       action :show
       build_options
 
