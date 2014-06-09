@@ -45,7 +45,7 @@ module HammerCLIForemanTasks
     def dump_plan_actions(plan_js)
       plan = MultiJson.load(plan_js, :symbolize_keys => true)
       action_ids = plan[:steps].map { |step| step[:action_id] }.uniq
-      action_ids.each { |action_id| self.dump_action(plan[:id], action_id, @dynflow_binding) }
+      action_ids.each { |action_id| dump_action(plan[:id], action_id, @dynflow_binding) }
     end
 
     def export_actions(plan_id, action_ids, path)

@@ -29,8 +29,8 @@ module HammerCLIForemanTasks
       command_name 'export'
       desc 'Export tasks and actions'
 
-      option ["-t", "--task-id"], "TASK_ID", "ID(s) of task to export", :format => HammerCLI::Options::Normalizers::List.new
-      option ["-e", "--exec-plan-id"], "PLAN_ID", "ID(s) of plan to export",  :format => HammerCLI::Options::Normalizers::List.new
+      option ["-t", "--task-id"], "TASK_ID", "ID(s) of task to export", :format => HammerCLI::Options::Normalizers::List.new, :default => []
+      option ["-e", "--exec-plan-id"], "PLAN_ID", "ID(s) of plan to export",  :format => HammerCLI::Options::Normalizers::List.new, :default => []
       option ["-p", "--on-paused"], :flag, "Operate on all paused tasks"
       option ["-c", "--compression"], :flag, "Use gzip compression"
       option ["-d", "--dir"], "DIR", "Output to DIR", :default => './'
@@ -66,12 +66,10 @@ module HammerCLIForemanTasks
       end
 
       def load_plan_ids
-        plan_ids = all_ids if option_on_all?
-        plan_ids = paused_ids if option_on_paused?
-        plan_ids ||= []
-        plan_ids << option_exec_plan_id
-        plan_ids << option_task_id.map { |task_id| task_to_plan_id(task_id) } unless option_task_id.nil?
-        plan_ids.flatten.uniq.compact
+        return all_ids if option_on_all?
+        return paused_ids if option_on_paused?
+        plan_ids = option_exec_plan_id + option_task_id.map { |task_id| task_to_plan_id(task_id) }
+        plan_ids.uniq.compact
       end
 
     end
