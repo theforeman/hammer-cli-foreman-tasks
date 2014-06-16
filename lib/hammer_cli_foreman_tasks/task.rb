@@ -1,11 +1,12 @@
 module HammerCLIForemanTasks
   class Task < HammerCLIForeman::Command
 
+    resource :foreman_tasks
+
     class ProgressCommand < HammerCLIForeman::Command
 
       include HammerCLIForemanTasks::Helper
 
-      resource :foreman_tasks
       action :show
       build_options
 
@@ -18,7 +19,50 @@ module HammerCLIForemanTasks
       end
 
     end
-    
+
+    class SkipCommand < HammerCLIForeman::Command
+      action :skip
+      command_name 'skip'
+      desc "Skip plan's actions which are in error state"
+
+      build_options
+
+      success_message _("Task's paused actions skipped")
+      failure_message _("Failed to skip some of the actions")
+    end
+
+    class ResumeCommand < HammerCLIForeman::Command
+      action :resume
+      command_name 'resume'
+      desc 'Resume paused task'
+
+      build_options
+
+      success_message _("Task resumed")
+      failure_message _("Failed to resume task")
+    end
+      
+    class ListCommand < HammerCLIForeman::ListCommand
+      
+      action :index
+
+      command_name 'list'
+      desc 'List tasks'
+      @states = ['pending', 'planning', 'planned', 'running', 'paused', 'stopped']
+      output ListCommand.output_definition do
+        field :id, _("ID")
+        field :label, _("Label")
+        field :username, _("User")
+        field :started_at, _("Started at"), Fields::Date
+        field :ended_at, _("Ended at"), Fields::Date
+        field :state, _("State")
+        field :result, _("Result")
+      end
+
+      option '--states', 'STATES', "List of states to show", :format => HammerCLI::Options::Normalizers::EnumList.new(@states)
+
+    end
+
     class TaskExportCommand < HammerCLIForeman::Command
 
       require 'zlib'
