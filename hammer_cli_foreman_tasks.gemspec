@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Ivan Nečas"]
   s.license     = "GPL-3"
   s.email       = ["inecas@redhat.com"]
-  s.homepage    = "https://github.com/iNecas/hammer-cli-foreman-tasks"
+  s.homepage    = "https://github.com/theforeman/hammer-cli-foreman-tasks"
   s.summary     = "Foreman CLI plugin for showing tasks information for resoruces and users"
   s.description = <<DESC
 Contains the code for showing of the tasks (results and progress) in the Hammer CLI.
