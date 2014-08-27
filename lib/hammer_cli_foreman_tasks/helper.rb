@@ -10,7 +10,7 @@ module HammerCLIForemanTasks
     end
 
     def load_task(id)
-      self.class.resource(:foreman_tasks).call(:show, :id => id)
+      HammerCLIForeman.foreman_resource!(:foreman_tasks).call(:show, :id => id)
     end
 
   end
