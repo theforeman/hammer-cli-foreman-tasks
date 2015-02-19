@@ -24,7 +24,7 @@ module HammerCLIForemanTasks
       progress_bar do |bar|
         begin
           while true
-            bar.show(:msg => "Task #{@task_id} progress", :done => @task['progress'].to_f, :total => 1)
+            bar.show(:msg => "Task #{@task_id} #{@task['result']}", :done => @task['progress'].to_f, :total => 1)
             if task_pending?
               sleep interval
               update_task
@@ -39,7 +39,6 @@ module HammerCLIForemanTasks
     end
 
     def render_result
-      puts "Task %{uuid}: %{result}" % { :uuid => @task_id, :result => @task['result'] }
       unless @task['humanized']['output'].to_s.empty?
         puts @task['humanized']['output']
       end
