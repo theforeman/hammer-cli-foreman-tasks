@@ -39,9 +39,8 @@ module HammerCLIForemanTasks
     end
 
     def render_result
-      unless @task['humanized']['output'].to_s.empty?
-        puts @task['humanized']['output']
-      end
+      puts @task['humanized']['output'] unless @task['humanized']['output'].to_s.empty?
+      STDERR.puts @task['humanized']['errors'].join("\n") unless @task['humanized']['errors'].to_s.empty?
     end
 
     def update_task
