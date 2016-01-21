@@ -20,6 +20,7 @@ module HammerCLIForemanTasks
     end
 
     class CancelCommand < HammerCLIForeman::DeleteCommand
+      action :cancel
       command_name 'cancel'
       success_message _('Recurring logic cancelled.')
       failure_message _('Could not cancel the recurring logic.')
