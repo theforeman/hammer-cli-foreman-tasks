@@ -22,7 +22,7 @@ module HammerCLIForemanTasks
 
     class ListCommand < HammerCLIForeman::ListCommand
       output do
-        field :id, _('Id')
+        field :id, _('ID')
         field :action, _('Name')
         field :username, _('Owner')
         field :started_at, _('Started at'), Fields::Date
