@@ -4,8 +4,8 @@ module HammerCLIForemanTasks
 
     class ListCommand < HammerCLIForeman::ListCommand
       output do
-        field :id, _('Id')
-        field :cron_line, _('Cronline')
+        field :id, _('ID')
+        field :cron_line, _('Cron line')
         field :end_time, _('End time')
         field :iteration, _('Iteration')
         field :state, _('State')

@@ -17,7 +17,8 @@ Gem::Specification.new do |s|
 Contains the code for showing of the tasks (results and progress) in the Hammer CLI.
 DESC
 
-  s.files = Dir["{lib,config}/**/*", "LICENSE", "README.md"]
+  s.files = Dir["{lib,config,locale}/**/*", "LICENSE", "README.md"]
+  s.require_paths = ["lib"]
 
   s.add_dependency "powerbar", "~> 1.0.11"
   s.add_dependency "hammer_cli_foreman", "> 0.1.1", "< 1.0.0"

@@ -4,3 +4,8 @@
 *.gemspec
 pkg
 Gemfile.lock
+
+# Locale files
+locale/*/*.edit.po
+locale/*/*.po.time_stamp
+
