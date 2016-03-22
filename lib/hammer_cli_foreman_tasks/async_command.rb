@@ -11,8 +11,8 @@ module HammerCLIForemanTasks
       if option_async?
         super
       else
-        task_progress(send_request)
-        HammerCLI::EX_OK
+        exit_code = task_progress(send_request)
+        exit_code
       end
     end
 
