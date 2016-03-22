@@ -1,7 +1,7 @@
 require 'powerbar'
 module HammerCLIForemanTasks
   class TaskProgress
-    attr_accessor :interval, :task
+    attr_accessor :interval, :task, :exit_code
 
     def initialize(task_id, &block)
       @update_block = block
@@ -41,6 +41,7 @@ module HammerCLIForemanTasks
     def render_result
       puts @task['humanized']['output'] unless @task['humanized']['output'].to_s.empty?
       STDERR.puts @task['humanized']['errors'].join("\n") unless @task['humanized']['errors'].to_s.empty?
+      self.exit_code = @task['humanized']['errors'].to_s.empty? ? HammerCLI::EX_OK : HammerCLI::EX_DATAERR
     end
 
     def update_task
