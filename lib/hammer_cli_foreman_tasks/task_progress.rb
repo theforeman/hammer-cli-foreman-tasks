@@ -14,6 +14,10 @@ module HammerCLIForemanTasks
       render_progress
     end
 
+    def success?
+      @task[:result] != 'error'
+    end
+
     private
 
     def render_progress
@@ -40,7 +44,7 @@ module HammerCLIForemanTasks
 
     def render_result
       puts @task['humanized']['output'] unless @task['humanized']['output'].to_s.empty?
-      STDERR.puts @task['humanized']['errors'].join("\n") unless @task['humanized']['errors'].to_s.empty?
+      STDERR.puts "Error: #{@task['humanized']['errors'].join("\n")}" unless @task['humanized']['errors'].empty?
     end
 
     def update_task

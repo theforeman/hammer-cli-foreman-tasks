@@ -14,8 +14,8 @@ module HammerCLIForemanTasks
       desc _("Show the progress of the task")
 
       def execute
-        task_progress(option_id)
-        HammerCLI::EX_OK
+        success = task_progress(option_id)
+        success ? HammerCLI::EX_OK : HammerCLI::EX_SOFTWARE
       end
 
     end
