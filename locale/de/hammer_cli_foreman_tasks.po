@@ -1,0 +1,131 @@
+# bkearney <bkearney@redhat.com>, 2016. #zanata
+# jdimanos <jdimanos@redhat.com>, 2016. #zanata
+# lstemmle <lstemmle@redhat.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-18 10:36-0500\n"
+"PO-Revision-Date: 2016-05-12 11:48+0000\n"
+"Last-Translator: lstemmle <lstemmle@redhat.com>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Zanata 3.8.4\n"
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:7
+#: ../lib/hammer_cli_foreman_tasks/task.rb:25
+msgid "ID"
+msgstr "ID"
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:8
+msgid "Cron line"
+msgstr "Cron-Zeile"
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:9
+msgid "End time"
+msgstr "Endzeit"
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:10
+msgid "Iteration"
+msgstr "Wiederholung"
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:11
+#: ../lib/hammer_cli_foreman_tasks/task.rb:30
+msgid "State"
+msgstr "Status"
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:25
+#, fuzzy
+msgid "Recurring logic cancelled."
+msgstr "Wiederkehrende Logik abgebrochen."
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:26
+msgid "Could not cancel the recurring logic."
+msgstr "Wiederkehrende Logik konnte nicht abgebrochen werden."
+
+#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:33
+msgid "Recurring logic related actions."
+msgstr "Aktionen im Zusammenhang mit wiederkehrender Logik"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:14
+msgid "Show the progress of the task"
+msgstr "Fortschritt der Aufgabe anzeigen"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:26
+msgid "Name"
+msgstr "Name"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:27
+msgid "Owner"
+msgstr "Besitzer"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:28
+msgid "Started at"
+msgstr "Gestartet um"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:29
+msgid "Ended at"
+msgstr "Beendet um"
+
+# translation auto-copied from project Red Hat Satellite Installation Guide,
+# version 6.0, document chap-
+# Uninstalling_Red_Hat_Satellite_Server_and_Capsule_Server
+#: ../lib/hammer_cli_foreman_tasks/task.rb:31
+msgid "Result"
+msgstr "Ergebnis"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:33
+#: ../lib/hammer_cli_foreman_tasks/task.rb:54
+#: ../lib/hammer_cli_foreman_tasks/task.rb:63
+#: ../lib/hammer_cli_foreman_tasks/task.rb:72
+msgid "Task action"
+msgstr "Aufgabenaktion"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:34
+#: ../lib/hammer_cli_foreman_tasks/task.rb:55
+#: ../lib/hammer_cli_foreman_tasks/task.rb:64
+#: ../lib/hammer_cli_foreman_tasks/task.rb:73
+msgid "Task errors"
+msgstr "Aufgabenfehler"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:45
+msgid "Resume all tasks paused in error state"
+msgstr "Alle in Fehler-Status angehaltenen Aufgaben fortsetzen"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:48
+msgid "Total tasks found paused in error state"
+msgstr "Alle in Fehler-Status gefundenen Aufgaben "
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:50
+msgid "Total tasks resumed"
+msgstr "Insgesamt fortgesetzte Aufgaben"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:51
+msgid "Resumed tasks"
+msgstr "Fortgesetzte Aufgaben"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:52
+#: ../lib/hammer_cli_foreman_tasks/task.rb:61
+#: ../lib/hammer_cli_foreman_tasks/task.rb:70
+msgid "Task identifier"
+msgstr "Aufgabenbezeichner"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:59
+msgid "Total tasks failed to resume"
+msgstr "Gesamtzahl der Aufgaben, die nicht fortgesetzt werden konnten"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:60
+msgid "Failed tasks"
+msgstr "Fehlgeschlagene Aufgaben"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:68
+msgid "Total tasks skipped"
+msgstr "Insgesamt übersprungene Aufgaben"
+
+#: ../lib/hammer_cli_foreman_tasks/task.rb:69
+msgid "Skipped tasks"
+msgstr "Übersprungene Aufgaben"
