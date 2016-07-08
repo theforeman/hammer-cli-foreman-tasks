@@ -15,7 +15,7 @@ module HammerCLIForemanTasks
     end
 
     def success?
-      @task[:result] != 'error'
+      !%w(error warning).include?(@task['result'])
     end
 
     private
