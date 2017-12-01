@@ -1,129 +1,95 @@
-# bkearney <bkearney@redhat.com>, 2016. #zanata
-# ypoyarko <ypoyarko@redhat.com>, 2016. #zanata
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_tasks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-18 10:36-0500\n"
-"PO-Revision-Date: 2016-05-09 07:17+0000\n"
-"Last-Translator: ypoyarko <ypoyarko@redhat.com>\n"
-"Language-Team: Russian\n"
+"PO-Revision-Date: 2016-02-18 10:36-0500\n"
+"Last-Translator: Dominic Cleal <dominic@cleal.org>, 2017\n"
+"Language-Team: Russian (https://www.transifex.com/foreman/teams/114/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Zanata 3.8.4\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=1"
+"1 && n%100<=14)? 2 : 3);\n"
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:7
-#: ../lib/hammer_cli_foreman_tasks/task.rb:25
 msgid "ID"
 msgstr "Код"
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:8
 msgid "Cron line"
 msgstr "Строка Cron"
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:9
 msgid "End time"
 msgstr "Конец"
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:10
 msgid "Iteration"
 msgstr "Итерация"
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:11
-#: ../lib/hammer_cli_foreman_tasks/task.rb:30
 msgid "State"
 msgstr "Состояние"
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:25
 msgid "Recurring logic cancelled."
 msgstr "Регулярное выполнение отменено."
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:26
 msgid "Could not cancel the recurring logic."
 msgstr "Не удалось отменить регулярное выполнение."
 
-#: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:33
 msgid "Recurring logic related actions."
 msgstr "Действия регулярного выполнения"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:14
 msgid "Show the progress of the task"
 msgstr "Показать индикатор выполнения задачи"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:26
 msgid "Name"
 msgstr "Имя"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:27
 msgid "Owner"
 msgstr "Владелец"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:28
 msgid "Started at"
 msgstr "Начало"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:29
 msgid "Ended at"
 msgstr "Конец"
 
-# translation auto-copied from project Red Hat Satellite Installation Guide,
-# version 6.0, document chap-
-# Uninstalling_Red_Hat_Satellite_Server_and_Capsule_Server
-#: ../lib/hammer_cli_foreman_tasks/task.rb:31
 msgid "Result"
 msgstr "Результат"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:33
-#: ../lib/hammer_cli_foreman_tasks/task.rb:54
-#: ../lib/hammer_cli_foreman_tasks/task.rb:63
-#: ../lib/hammer_cli_foreman_tasks/task.rb:72
 msgid "Task action"
 msgstr "Действие задачи"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:34
-#: ../lib/hammer_cli_foreman_tasks/task.rb:55
-#: ../lib/hammer_cli_foreman_tasks/task.rb:64
-#: ../lib/hammer_cli_foreman_tasks/task.rb:73
 msgid "Task errors"
 msgstr "Ошибки"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:45
 msgid "Resume all tasks paused in error state"
 msgstr "Возобновить все приостановленные задачи в состоянии ошибки"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:48
 msgid "Total tasks found paused in error state"
 msgstr "Всего приостановленных задач в состоянии ошибки"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:50
 msgid "Total tasks resumed"
 msgstr "Всего возобновлено задач"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:51
 msgid "Resumed tasks"
 msgstr "Возобновленные задачи"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:52
-#: ../lib/hammer_cli_foreman_tasks/task.rb:61
-#: ../lib/hammer_cli_foreman_tasks/task.rb:70
 msgid "Task identifier"
 msgstr "Идентификатор"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:59
 msgid "Total tasks failed to resume"
 msgstr "Всего не удалось возобновить"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:60
 msgid "Failed tasks"
 msgstr "Неудавшиеся задачи"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:68
 msgid "Total tasks skipped"
 msgstr "Всего пропущено задач"
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:69
 msgid "Skipped tasks"
 msgstr "Пропущенные задачи"
