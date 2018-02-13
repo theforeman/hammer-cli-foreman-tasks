@@ -23,12 +23,12 @@ module HammerCLIForemanTasks
       action :cancel
       command_name 'cancel'
       success_message _('Recurring logic cancelled.')
-      failure_message _('Could not cancel the recurring logic.')
+      failure_message _('Could not cancel the recurring logic')
       build_options
     end
 
     autoload_subcommands
   end
 
-  HammerCLI::MainCommand.subcommand 'recurring-logic', _('Recurring logic related actions.'), RecurringLogic
+  HammerCLI::MainCommand.subcommand 'recurring-logic', _('Recurring logic related actions'), RecurringLogic
 end
