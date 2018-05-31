@@ -3,6 +3,19 @@ module HammerCLIForemanTasks
 
     resource :foreman_tasks
 
+    module WithoutNameOption
+      def create_option_builder
+        HammerCLI::Apipie::OptionBuilder.new(resource, resource.action(action), :require_options => false)
+      end
+    end
+
+    module ActionField
+      def extend_data(task)
+        task["action"] = [task["humanized"]["action"], task["humanized"]["input"]].join(' ')
+        task
+      end
+    end
+
     class ProgressCommand < HammerCLIForeman::Command
 
       include HammerCLIForemanTasks::Helper
@@ -21,16 +34,19 @@ module HammerCLIForemanTasks
     end
 
     class ListCommand < HammerCLIForeman::ListCommand
+      extend WithoutNameOption
+      include ActionField
+
       output do
         field :id, _('ID')
-        field :action, _('Name')
-        field :username, _('Owner')
-        field :started_at, _('Started at'), Fields::Date
-        field :ended_at, _('Ended at'), Fields::Date
+        field :action, _('Action')
         field :state, _('State')
         field :result, _('Result')
+        field :started_at, _('Started at'), Fields::Date
+        field :ended_at, _('Ended at'), Fields::Date
+        field :username, _('Owner')
+
         from :humanized do
-          field :action, _('Task action')
           field :errors, _('Task errors'), Fields::List, :hide_blank => true
         end
       end
@@ -38,8 +54,31 @@ module HammerCLIForemanTasks
       build_options
     end
 
+    class InfoCommand < HammerCLIForeman::InfoCommand
+      extend WithoutNameOption
+      include ActionField
+
+      output do
+        field :id, _('ID')
+        field :action, _('Action')
+        field :state, _('State')
+        field :result, _('Result')
+        field :started_at, _('Started at'), Fields::Date
+        field :ended_at, _('Ended at'), Fields::Date
+        field :username, _('Owner')
+
+        from :humanized do
+          field :errors, _('Task errors'), Fields::List, :hide_blank => true
+        end
+      end
+
+      build_options
+
+    end
+
     class ResumeCommand < HammerCLIForeman::InfoCommand
       action :bulk_resume
+
 
       command_name "resume"
       desc _("Resume all tasks paused in error state")
