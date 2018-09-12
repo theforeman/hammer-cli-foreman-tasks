@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.name        = "hammer_cli_foreman_tasks"
   s.version     = HammerCLIForemanTasks.version
   s.authors     = ["Ivan Nečas"]
-  s.license     = "GPL-3"
+  s.license     = "GPL-3.0"
   s.email       = ["inecas@redhat.com"]
   s.homepage    = "https://github.com/theforeman/hammer-cli-foreman-tasks"
   s.summary     = "Foreman CLI plugin for showing tasks information for resoruces and users"
