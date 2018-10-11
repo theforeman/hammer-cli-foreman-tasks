@@ -3,10 +3,11 @@ module HammerCLIForemanTasks
   class TaskProgress
     attr_accessor :interval, :task
 
-    def initialize(task_id, &block)
+    def initialize(task_id, options = {}, &block)
       @update_block = block
       @task_id      = task_id
       @interval     = 2
+      @options      = options
     end
 
     def render
@@ -43,7 +44,7 @@ module HammerCLIForemanTasks
     end
 
     def render_result
-      puts @task['humanized']['output'] unless @task['humanized']['output'].to_s.empty?
+      puts @task['humanized']['output'] if !@task['humanized']['output'].to_s.empty? && appropriate_verbosity?
       STDERR.puts "Error: #{@task['humanized']['errors'].join("\n")}" unless @task['humanized']['errors'].empty?
     end
 
@@ -61,11 +62,15 @@ module HammerCLIForemanTasks
       bar.settings.tty.finite.template.main    = '[${<bar>}] [${<percent>%}]'
       bar.settings.tty.finite.template.padchar = ' '
       bar.settings.tty.finite.template.barchar = '.'
-      bar.settings.tty.finite.output           = Proc.new { |s| $stderr.print s }
+      bar.settings.tty.finite.output           = Proc.new { |s| $stderr.print s if appropriate_verbosity? }
       yield bar
     ensure
       bar.close
       render_result
+    end
+
+    def appropriate_verbosity?
+      @options[:verbosity] >= HammerCLI::V_VERBOSE
     end
   end
 end
