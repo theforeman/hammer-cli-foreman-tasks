@@ -45,7 +45,9 @@ module HammerCLIForemanTasks
 
     def render_result
       puts @task['humanized']['output'] if !@task['humanized']['output'].to_s.empty? && appropriate_verbosity?
-      STDERR.puts "Error: #{@task['humanized']['errors'].join("\n")}" unless @task['humanized']['errors'].empty?
+      unless @task['humanized']['errors'].nil? || @task['humanized']['errors'].empty?
+        STDERR.puts "Error: #{@task['humanized']['errors'].join("\n")}"
+      end
     end
 
     def update_task
