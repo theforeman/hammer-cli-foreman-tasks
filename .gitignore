@@ -4,6 +4,8 @@
 *.gemspec
 pkg
 Gemfile.lock
+Gemfile.local
+Gemfile.local.rb
 
 # Locale files
 locale/*/*.edit.po
