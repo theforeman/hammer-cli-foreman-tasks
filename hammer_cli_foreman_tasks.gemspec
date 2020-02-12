@@ -21,5 +21,5 @@ DESC
   s.require_paths = ["lib"]
 
   s.add_dependency "powerbar", ">= 1.0.11", "< 3.0"
-  s.add_dependency "hammer_cli_foreman", "> 0.1.1", "< 1.0.0"
+  s.add_dependency "hammer_cli_foreman", "> 0.1.1", "< 3.0.0"
 end
