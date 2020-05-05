@@ -6,8 +6,8 @@ module HammerCLIForemanTasks
       output do
         field :id, _('ID')
         field :cron_line, _('Cron line')
-        field :end_time, _('End time')
         field :iteration, _('Iteration')
+        field :end_time, _('End time')
         field :state, _('State')
       end
 
@@ -17,6 +17,8 @@ module HammerCLIForemanTasks
     class InfoCommand < HammerCLIForeman::InfoCommand
       output ListCommand.output_definition
       build_options
+
+      extend_with(HammerCLIForemanTasks::CommandExtensions::RecurringLogic.new)
     end
 
     class CancelCommand < HammerCLIForeman::DeleteCommand
