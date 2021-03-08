@@ -12,11 +12,6 @@ module HammerCLIForemanTasks
     module ActionField
       def extend_data(task)
         task["action"] = [task["humanized"]["action"], task["humanized"]["input"]].join(' ')
-        task["duration"] = if task["started_at"] && task["ended_at"]
-                            Time.parse(task["ended_at"]).to_f - Time.parse(task["started_at"]).to_f
-                          elsif task["started_at"] && task["ended_at"].nil?
-                            Time.now.to_f - Time.parse(task["started_at"]).to_f
-                          end
         task
       end
     end
@@ -38,7 +33,7 @@ module HammerCLIForemanTasks
 
     end
 
-    class ListCommand < HammerCLIForeman::ListCommand
+    class ListCommand < HammerCLIForeman::ListCommand     
       extend WithoutNameOption
       include ActionField
 
@@ -57,7 +52,16 @@ module HammerCLIForemanTasks
         end
       end
 
-      build_options
+      def extend_data(task)
+        task["duration"] = if task["started_at"] && task["ended_at"]
+                          Time.parse(task["ended_at"]).to_f - Time.parse(task["started_at"]).to_f
+                        elsif task["started_at"] && task["ended_at"].nil?
+                          Time.now.to_f - Time.parse(task["started_at"]).to_f
+                        end
+        task
+      end
+
+      build_options 
     end
 
     class InfoCommand < HammerCLIForeman::InfoCommand
