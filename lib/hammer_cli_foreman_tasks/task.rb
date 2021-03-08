@@ -12,6 +12,11 @@ module HammerCLIForemanTasks
     module ActionField
       def extend_data(task)
         task["action"] = [task["humanized"]["action"], task["humanized"]["input"]].join(' ')
+        task["duration"] = if task["started_at"] && task["ended_at"]
+                            Time.parse(task["ended_at"]).to_f - Time.parse(task["started_at"]).to_f
+                          elsif task["started_at"] && task["ended_at"].nil?
+                            Time.now.to_f - Time.parse(task["started_at"]).to_f
+                          end
         task
       end
     end
@@ -44,6 +49,7 @@ module HammerCLIForemanTasks
         field :result, _('Result')
         field :started_at, _('Started at'), Fields::Date
         field :ended_at, _('Ended at'), Fields::Date
+        field :duration, _('Duration')
         field :username, _('Owner')
 
         from :humanized do
