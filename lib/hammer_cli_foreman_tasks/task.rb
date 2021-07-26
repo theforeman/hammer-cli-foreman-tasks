@@ -52,8 +52,7 @@ module HammerCLIForemanTasks
         end
       end
 
-
-      build_options 
+      build_options
     end
 
     class InfoCommand < HammerCLIForeman::InfoCommand
@@ -76,7 +75,6 @@ module HammerCLIForemanTasks
       end
 
       build_options
-
     end
 
     class ResumeCommand < HammerCLIForeman::InfoCommand
