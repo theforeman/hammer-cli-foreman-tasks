@@ -44,6 +44,7 @@ module HammerCLIForemanTasks
         field :result, _('Result')
         field :started_at, _('Started at'), Fields::Date
         field :ended_at, _('Ended at'), Fields::Date
+        field :duration, _('Duration')
         field :username, _('Owner')
 
         from :humanized do
@@ -65,6 +66,7 @@ module HammerCLIForemanTasks
         field :result, _('Result')
         field :started_at, _('Started at'), Fields::Date
         field :ended_at, _('Ended at'), Fields::Date
+        field :duration, _('Duration')
         field :username, _('Owner')
 
         from :humanized do
@@ -73,7 +75,6 @@ module HammerCLIForemanTasks
       end
 
       build_options
-
     end
 
     class ResumeCommand < HammerCLIForeman::InfoCommand
