@@ -21,6 +21,11 @@ module HammerCLIForemanTasks
       include HammerCLIForemanTasks::Helper
 
       action :show
+
+      validate_options do
+        option(:option_id).required
+      end
+
       build_options
 
       command_name "progress"
