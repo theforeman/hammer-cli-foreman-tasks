@@ -6,9 +6,15 @@ module HammerCLIForemanTasks
       output do
         field :id, _('ID')
         field :cron_line, _('Cron line')
+        field :task_count, _('Task count')
+        field :action, _('Action')
+        field :last_occurence, _('Last occurrence'), Fields::Date
+        field :next_occurence, _('Next occurrence'), Fields::Date
         field :iteration, _('Iteration')
+        field :max_iteration, _('Iteration limit')
         field :end_time, _('End time')
         field :state, _('State')
+        field :purpose, _('Purpose')
       end
 
       build_options
