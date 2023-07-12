@@ -1,8 +1,9 @@
 [main]
-host = https://www.transifex.com
+host = https://app.transifex.com
 
-[foreman.hammer_cli_foreman_tasks]
+[o:foreman:p:foreman:r:hammer_cli_foreman_tasks]
 file_filter = locale/<lang>/hammer_cli_foreman_tasks.edit.po
 source_file = locale/hammer_cli_foreman_tasks.pot
 source_lang = en
 type = PO
+resource_name = hammer_cli_foreman_tasks
