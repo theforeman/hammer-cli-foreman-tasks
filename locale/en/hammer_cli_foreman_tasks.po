@@ -1,21 +1,42 @@
-# English translations for hammer_cli_foreman_tasks package.
-# Copyright (C) 2016 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the hammer_cli_foreman_tasks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.9\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-02-10 13:03-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
+"PO-Revision-Date: 2017-12-01 15:19-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: English\n"
-"Language: en\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "Action"
+msgstr ""
+
+msgid "Last occurrence"
+msgstr ""
+
+msgid "Next occurrence"
+msgstr ""
+
+msgid "Iteration limit"
+msgstr ""
+
+msgid "Repeat until"
+msgstr ""
+
+msgid "Unlimited"
+msgstr ""
+
+msgid "Please mention appropriate attribute value"
+msgstr ""
 
 msgid "ID"
 msgstr ""
@@ -23,31 +44,52 @@ msgstr ""
 msgid "Cron line"
 msgstr ""
 
-msgid "End time"
+msgid "Task count"
 msgstr ""
 
 msgid "Iteration"
 msgstr ""
 
+msgid "End time"
+msgstr ""
+
 msgid "State"
+msgstr ""
+
+msgid "Purpose"
 msgstr ""
 
 msgid "Recurring logic cancelled."
 msgstr ""
 
-msgid "Could not cancel the recurring logic."
+msgid "Could not cancel the recurring logic"
 msgstr ""
 
-msgid "Recurring logic related actions."
+msgid "Only delete cancelled recurring logics"
+msgstr ""
+
+msgid "Only delete finished recurring logics"
+msgstr ""
+
+msgid "Delete all recuring logics filtered by the arguments"
+msgstr ""
+
+msgid "Could not delete recurring logics"
+msgstr ""
+
+msgid "The following recurring logics deleted:"
+msgstr ""
+
+msgid "No recurring logics deleted."
+msgstr ""
+
+msgid "Recurring logic related actions"
 msgstr ""
 
 msgid "Show the progress of the task"
 msgstr ""
 
-msgid "Name"
-msgstr ""
-
-msgid "Owner"
+msgid "Result"
 msgstr ""
 
 msgid "Started at"
@@ -56,10 +98,10 @@ msgstr ""
 msgid "Ended at"
 msgstr ""
 
-msgid "Result"
+msgid "Duration"
 msgstr ""
 
-msgid "Task action"
+msgid "Owner"
 msgstr ""
 
 msgid "Task errors"
@@ -78,6 +120,9 @@ msgid "Resumed tasks"
 msgstr ""
 
 msgid "Task identifier"
+msgstr ""
+
+msgid "Task action"
 msgstr ""
 
 msgid "Total tasks failed to resume"

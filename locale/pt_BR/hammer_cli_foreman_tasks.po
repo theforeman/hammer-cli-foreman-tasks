@@ -11,17 +11,19 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.12\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-01 15:19-0500\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
 "Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2017\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/foreman/teams/11"
-"4/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/foreman/"
+"teams/114/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
 
 msgid "ID"
 msgstr "ID"
@@ -97,3 +99,57 @@ msgstr "Total de tarefas ignoradas"
 
 msgid "Skipped tasks"
 msgstr "Tarefas ignoradas"
+
+msgid "Action"
+msgstr ""
+
+msgid "Last occurrence"
+msgstr ""
+
+msgid "Next occurrence"
+msgstr ""
+
+msgid "Iteration limit"
+msgstr ""
+
+msgid "Repeat until"
+msgstr ""
+
+msgid "Unlimited"
+msgstr ""
+
+msgid "Please mention appropriate attribute value"
+msgstr ""
+
+msgid "Task count"
+msgstr ""
+
+msgid "Purpose"
+msgstr ""
+
+msgid "Could not cancel the recurring logic"
+msgstr ""
+
+msgid "Only delete cancelled recurring logics"
+msgstr ""
+
+msgid "Only delete finished recurring logics"
+msgstr ""
+
+msgid "Delete all recuring logics filtered by the arguments"
+msgstr ""
+
+msgid "Could not delete recurring logics"
+msgstr ""
+
+msgid "The following recurring logics deleted:"
+msgstr ""
+
+msgid "No recurring logics deleted."
+msgstr ""
+
+msgid "Recurring logic related actions"
+msgstr ""
+
+msgid "Duration"
+msgstr ""
