@@ -4,10 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# 21966816214bc546c1fc8a185e75ca1c, 2017
-# Claer <transiblu@claer.hammock.fr>, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2017
-# Amit Upadhye <aupadhye@redhat.com>, 2023
+# Efstathios Iosifidis <iefstathios@gmail.com>, 2020
 #
 #, fuzzy
 msgid ""
@@ -16,89 +13,88 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 15:19-0500\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
-"Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>, 2020\n"
+"Language-Team: Greek (https://app.transifex.com/foreman/teams/114/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
-"1000000 == 0 ? 1 : 2;\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "ID"
 msgstr "ID"
 
 msgid "Cron line"
-msgstr "Ligne Cron"
+msgstr "Γραμμή Cron"
 
 msgid "End time"
-msgstr "Heure de fin"
+msgstr "Χρόνος λήξης"
 
 msgid "Iteration"
-msgstr "Itération"
+msgstr "Επανάληψη"
 
 msgid "State"
-msgstr "État"
+msgstr "Κατάσταση"
 
 msgid "Recurring logic cancelled."
-msgstr "Logique récurrente annulée."
+msgstr "Ακυρώθηκε η επαναλαμβανόμενη λογική."
 
 msgid "Could not cancel the recurring logic."
-msgstr "N'a pas pu annuler la logique récurrente."
+msgstr "Δεν ήταν δυνατή η ακύρωση της επαναλαμβανόμενης λογικής."
 
 msgid "Recurring logic related actions."
-msgstr "Actions liées à la logique récurrente."
+msgstr "Επαναλαμβανόμενες ενέργειες σχετικές με τη λογική."
 
 msgid "Show the progress of the task"
-msgstr "Afficher le progrès de la tâche"
+msgstr "Εμφάνιση προόδου εργασίας"
 
 msgid "Name"
-msgstr "Nom"
+msgstr "Όνομα"
 
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Ιδιοκτήτης"
 
 msgid "Started at"
-msgstr "Démarré à"
+msgstr "Ξεκίνησε στις"
 
 msgid "Ended at"
-msgstr "Terminé à"
+msgstr "Τελείωσε στις"
 
 msgid "Result"
-msgstr "Résultat"
+msgstr "Αποτέλεσμα"
 
 msgid "Task action"
-msgstr "Action de tâche"
+msgstr "Ενέργεια εργασίας"
 
 msgid "Task errors"
-msgstr "Erreurs de tâche"
+msgstr "Σφάλματα εργασίας"
 
 msgid "Resume all tasks paused in error state"
-msgstr "Reprendre toutes les tâches en attente avec des erreurs"
+msgstr "Επανάληψη όλων των εργασιών σε παύση σε κατάσταση σφάλματος"
 
 msgid "Total tasks found paused in error state"
-msgstr "Total des tâches mises en attente avec des erreurs"
+msgstr "Οι συνολικές εργασίες που εντοπίστηκαν σε παύση σε κατάσταση σφάλματος"
 
 msgid "Total tasks resumed"
-msgstr "Total des tâches terminées"
+msgstr "Οι συνολικές εργασίες συνεχίστηκαν"
 
 msgid "Resumed tasks"
-msgstr "Tâches terminées"
+msgstr "Εργασίες που συνεχίστηκαν"
 
 msgid "Task identifier"
-msgstr "Identificateur de tâche"
+msgstr "Αναγνωριστικό εργασίας"
 
 msgid "Total tasks failed to resume"
-msgstr "Total des tâches qui n'ont pas pu être terminées"
+msgstr "Οι συνολικές εργασίες απέτυχαν να συνεχιστούν"
 
 msgid "Failed tasks"
-msgstr "Tâches ayant échoué"
+msgstr "Εργασίες που απέτυχαν"
 
 msgid "Total tasks skipped"
-msgstr "Total des tâches évitées"
+msgstr "Οι συνολικές εργασίες έχουν παραλειφθεί"
 
 msgid "Skipped tasks"
-msgstr "Tâches évitées"
+msgstr "Εργασίες που παραλήφθηκαν"
 
 msgid "Action"
 msgstr ""

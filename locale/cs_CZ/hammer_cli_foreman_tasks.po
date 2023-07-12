@@ -4,10 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# 21966816214bc546c1fc8a185e75ca1c, 2017
-# Claer <transiblu@claer.hammock.fr>, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2017
-# Amit Upadhye <aupadhye@redhat.com>, 2023
+# Pavel Borecki <pavel.borecki@gmail.com>, 2019
 #
 #, fuzzy
 msgid ""
@@ -16,89 +13,90 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 15:19-0500\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
-"Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2019\n"
+"Language-Team: Czech (Czech Republic) (https://app.transifex.com/foreman/"
+"teams/114/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
-"1000000 == 0 ? 1 : 2;\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 msgid "ID"
-msgstr "ID"
+msgstr "Identifikátor"
 
 msgid "Cron line"
-msgstr "Ligne Cron"
+msgstr "Řádek z plánovače kron"
 
 msgid "End time"
-msgstr "Heure de fin"
+msgstr ""
 
 msgid "Iteration"
-msgstr "Itération"
+msgstr "Průchod"
 
 msgid "State"
-msgstr "État"
+msgstr "Stav"
 
 msgid "Recurring logic cancelled."
-msgstr "Logique récurrente annulée."
+msgstr ""
 
 msgid "Could not cancel the recurring logic."
-msgstr "N'a pas pu annuler la logique récurrente."
+msgstr ""
 
 msgid "Recurring logic related actions."
-msgstr "Actions liées à la logique récurrente."
+msgstr ""
 
 msgid "Show the progress of the task"
-msgstr "Afficher le progrès de la tâche"
+msgstr "Zobrazovat postup úlohy"
 
 msgid "Name"
-msgstr "Nom"
+msgstr "Název"
 
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Vlastník"
 
 msgid "Started at"
-msgstr "Démarré à"
+msgstr "Zahájeno v"
 
 msgid "Ended at"
-msgstr "Terminé à"
+msgstr "Skončilo v"
 
 msgid "Result"
-msgstr "Résultat"
+msgstr "Výsledek"
 
 msgid "Task action"
-msgstr "Action de tâche"
+msgstr "Akce úlohy"
 
 msgid "Task errors"
-msgstr "Erreurs de tâche"
+msgstr "Chyby úlohy"
 
 msgid "Resume all tasks paused in error state"
-msgstr "Reprendre toutes les tâches en attente avec des erreurs"
+msgstr ""
 
 msgid "Total tasks found paused in error state"
-msgstr "Total des tâches mises en attente avec des erreurs"
+msgstr ""
 
 msgid "Total tasks resumed"
-msgstr "Total des tâches terminées"
+msgstr ""
 
 msgid "Resumed tasks"
-msgstr "Tâches terminées"
+msgstr ""
 
 msgid "Task identifier"
-msgstr "Identificateur de tâche"
+msgstr "Identifikátor úlohy"
 
 msgid "Total tasks failed to resume"
-msgstr "Total des tâches qui n'ont pas pu être terminées"
+msgstr ""
 
 msgid "Failed tasks"
-msgstr "Tâches ayant échoué"
+msgstr "Nezdařené úlohy"
 
 msgid "Total tasks skipped"
-msgstr "Total des tâches évitées"
+msgstr "Celkem přeskočeno úloh"
 
 msgid "Skipped tasks"
-msgstr "Tâches évitées"
+msgstr "Přeskočené úlohy"
 
 msgid "Action"
 msgstr ""
