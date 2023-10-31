@@ -1,3 +1,5 @@
+require 'hammer_cli_foreman'
+
 module HammerCLIForemanTasks
 
   module Async
