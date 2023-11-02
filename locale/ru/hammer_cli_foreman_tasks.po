@@ -6,16 +6,16 @@
 # Translators:
 # Vladimir Pavlov <v.pavlov@i-teco.ru>, 2017
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2017
+# Bryan Kearney <bryan.kearney@gmail.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 15:19-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2017\n"
+"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/foreman/teams/114/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,83 +25,8 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-msgid "ID"
-msgstr "Код"
-
-msgid "Cron line"
-msgstr "Строка Cron"
-
-msgid "End time"
-msgstr "Конец"
-
-msgid "Iteration"
-msgstr "Итерация"
-
-msgid "State"
-msgstr "Состояние"
-
-msgid "Recurring logic cancelled."
-msgstr "Регулярное выполнение отменено."
-
-msgid "Could not cancel the recurring logic."
-msgstr "Не удалось отменить регулярное выполнение."
-
-msgid "Recurring logic related actions."
-msgstr "Действия регулярного выполнения"
-
-msgid "Show the progress of the task"
-msgstr "Показать индикатор выполнения задачи"
-
-msgid "Name"
-msgstr "Имя"
-
-msgid "Owner"
-msgstr "Владелец"
-
-msgid "Started at"
-msgstr "Начало"
-
-msgid "Ended at"
-msgstr "Конец"
-
-msgid "Result"
-msgstr "Результат"
-
-msgid "Task action"
-msgstr "Действие задачи"
-
-msgid "Task errors"
-msgstr "Ошибки"
-
-msgid "Resume all tasks paused in error state"
-msgstr "Возобновить все приостановленные задачи в состоянии ошибки"
-
-msgid "Total tasks found paused in error state"
-msgstr "Всего приостановленных задач в состоянии ошибки"
-
-msgid "Total tasks resumed"
-msgstr "Всего возобновлено задач"
-
-msgid "Resumed tasks"
-msgstr "Возобновленные задачи"
-
-msgid "Task identifier"
-msgstr "Идентификатор"
-
-msgid "Total tasks failed to resume"
-msgstr "Всего не удалось возобновить"
-
-msgid "Failed tasks"
-msgstr "Неудавшиеся задачи"
-
-msgid "Total tasks skipped"
-msgstr "Всего пропущено задач"
-
-msgid "Skipped tasks"
-msgstr "Пропущенные задачи"
-
 msgid "Action"
-msgstr ""
+msgstr "Команда"
 
 msgid "Last occurrence"
 msgstr ""
@@ -116,16 +41,34 @@ msgid "Repeat until"
 msgstr ""
 
 msgid "Unlimited"
-msgstr ""
+msgstr "Не ограничено"
 
 msgid "Please mention appropriate attribute value"
 msgstr ""
 
+msgid "ID"
+msgstr "Код"
+
+msgid "Cron line"
+msgstr "Строка Cron"
+
 msgid "Task count"
 msgstr ""
 
+msgid "Iteration"
+msgstr "Итерация"
+
+msgid "End time"
+msgstr "Конец"
+
+msgid "State"
+msgstr "Состояние"
+
 msgid "Purpose"
 msgstr ""
+
+msgid "Recurring logic cancelled."
+msgstr "Регулярное выполнение отменено."
 
 msgid "Could not cancel the recurring logic"
 msgstr ""
@@ -151,5 +94,53 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
+msgid "Show the progress of the task"
+msgstr "Показать индикатор выполнения задачи"
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "Started at"
+msgstr "Начало"
+
+msgid "Ended at"
+msgstr "Конец"
+
 msgid "Duration"
-msgstr ""
+msgstr "Продолжительность"
+
+msgid "Owner"
+msgstr "Владелец"
+
+msgid "Task errors"
+msgstr "Ошибки"
+
+msgid "Resume all tasks paused in error state"
+msgstr "Возобновить все приостановленные задачи в состоянии ошибки"
+
+msgid "Total tasks found paused in error state"
+msgstr "Всего приостановленных задач в состоянии ошибки"
+
+msgid "Total tasks resumed"
+msgstr "Всего возобновлено задач"
+
+msgid "Resumed tasks"
+msgstr "Возобновленные задачи"
+
+msgid "Task identifier"
+msgstr "Идентификатор"
+
+msgid "Task action"
+msgstr "Действие задачи"
+
+msgid "Total tasks failed to resume"
+msgstr "Всего не удалось возобновить"
+
+msgid "Failed tasks"
+msgstr "Неудавшиеся задачи"
+
+msgid "Total tasks skipped"
+msgstr "Всего пропущено задач"
+
+msgid "Skipped tasks"
+msgstr "Пропущенные задачи"

@@ -6,16 +6,17 @@
 # Translators:
 # mbacovsky <martin.bacovsky@gmail.com>, 2017
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2017
+# Bryan Kearney <bryan.kearney@gmail.com>, 2023
+# ChrisLee <chris_lee@hiiir.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 15:19-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2017\n"
+"Last-Translator: ChrisLee <chris_lee@hiiir.com>, 2023\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/foreman/teams/114/"
 "zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -24,83 +25,8 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "ID"
-msgstr "ID"
-
-msgid "Cron line"
-msgstr "Cron 行"
-
-msgid "End time"
-msgstr "結束時間"
-
-msgid "Iteration"
-msgstr "重述"
-
-msgid "State"
-msgstr "狀態"
-
-msgid "Recurring logic cancelled."
-msgstr "已取消週期性的邏輯。"
-
-msgid "Could not cancel the recurring logic."
-msgstr "無法取消週期性邏輯。"
-
-msgid "Recurring logic related actions."
-msgstr "週期性邏輯相關的動作。"
-
-msgid "Show the progress of the task"
-msgstr "顯示任務的進度"
-
-msgid "Name"
-msgstr "名稱"
-
-msgid "Owner"
-msgstr "擁有者"
-
-msgid "Started at"
-msgstr "起始於"
-
-msgid "Ended at"
-msgstr "結束於"
-
-msgid "Result"
-msgstr "結果"
-
-msgid "Task action"
-msgstr "任務動作"
-
-msgid "Task errors"
-msgstr "任務錯誤"
-
-msgid "Resume all tasks paused in error state"
-msgstr "重新啟動所有處於錯誤狀態的任務"
-
-msgid "Total tasks found paused in error state"
-msgstr "處於錯誤狀態的暫停任務總數"
-
-msgid "Total tasks resumed"
-msgstr "已重新執行的任務總數"
-
-msgid "Resumed tasks"
-msgstr "已重新執行的任務"
-
-msgid "Task identifier"
-msgstr "任務識別子"
-
-msgid "Total tasks failed to resume"
-msgstr "重新執行失敗的任務總數"
-
-msgid "Failed tasks"
-msgstr "失敗的任務"
-
-msgid "Total tasks skipped"
-msgstr "跳過的任務總數"
-
-msgid "Skipped tasks"
-msgstr "跳過的任務"
-
 msgid "Action"
-msgstr ""
+msgstr "動作"
 
 msgid "Last occurrence"
 msgstr ""
@@ -115,16 +41,34 @@ msgid "Repeat until"
 msgstr ""
 
 msgid "Unlimited"
-msgstr ""
+msgstr "無限制"
 
 msgid "Please mention appropriate attribute value"
 msgstr ""
 
+msgid "ID"
+msgstr "ID"
+
+msgid "Cron line"
+msgstr "Cron 行"
+
 msgid "Task count"
 msgstr ""
 
+msgid "Iteration"
+msgstr "重述"
+
+msgid "End time"
+msgstr "結束時間"
+
+msgid "State"
+msgstr "狀態"
+
 msgid "Purpose"
 msgstr ""
+
+msgid "Recurring logic cancelled."
+msgstr "已取消週期性的邏輯。"
 
 msgid "Could not cancel the recurring logic"
 msgstr ""
@@ -150,5 +94,53 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
+msgid "Show the progress of the task"
+msgstr "顯示任務的進度"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Started at"
+msgstr "起始於"
+
+msgid "Ended at"
+msgstr "結束於"
+
 msgid "Duration"
-msgstr ""
+msgstr "持續時間"
+
+msgid "Owner"
+msgstr "擁有者"
+
+msgid "Task errors"
+msgstr "任務錯誤"
+
+msgid "Resume all tasks paused in error state"
+msgstr "重新啟動所有處於錯誤狀態的任務"
+
+msgid "Total tasks found paused in error state"
+msgstr "處於錯誤狀態的暫停任務總數"
+
+msgid "Total tasks resumed"
+msgstr "已重新執行的任務總數"
+
+msgid "Resumed tasks"
+msgstr "已重新執行的任務"
+
+msgid "Task identifier"
+msgstr "任務識別子"
+
+msgid "Task action"
+msgstr "任務動作"
+
+msgid "Total tasks failed to resume"
+msgstr "重新執行失敗的任務總數"
+
+msgid "Failed tasks"
+msgstr "失敗的任務"
+
+msgid "Total tasks skipped"
+msgstr "跳過的任務總數"
+
+msgid "Skipped tasks"
+msgstr "跳過的任務"

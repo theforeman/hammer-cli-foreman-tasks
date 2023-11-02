@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
-# Andi Chandler <andi@gowling.com>, 2017
+# Andi Chandler <andi@gowling.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 15:19-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Andi Chandler <andi@gowling.com>, 2017\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/foreman/"
 "teams/114/en_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -23,83 +22,8 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "ID"
-msgstr "ID"
-
-msgid "Cron line"
-msgstr "Cron line"
-
-msgid "End time"
-msgstr "End time"
-
-msgid "Iteration"
-msgstr "Iteration"
-
-msgid "State"
-msgstr "State"
-
-msgid "Recurring logic cancelled."
-msgstr "Recurring logic cancelled."
-
-msgid "Could not cancel the recurring logic."
-msgstr "Could not cancel the recurring logic."
-
-msgid "Recurring logic related actions."
-msgstr "Recurring logic related actions."
-
-msgid "Show the progress of the task"
-msgstr "Show the progress of the task"
-
-msgid "Name"
-msgstr "Name"
-
-msgid "Owner"
-msgstr "Owner"
-
-msgid "Started at"
-msgstr "Started at"
-
-msgid "Ended at"
-msgstr "Ended at"
-
-msgid "Result"
-msgstr "Result"
-
-msgid "Task action"
-msgstr "Task action"
-
-msgid "Task errors"
-msgstr "Task errors"
-
-msgid "Resume all tasks paused in error state"
-msgstr "Resume all tasks paused in error state"
-
-msgid "Total tasks found paused in error state"
-msgstr "Total tasks found paused in error state"
-
-msgid "Total tasks resumed"
-msgstr "Total tasks resumed"
-
-msgid "Resumed tasks"
-msgstr "Resumed tasks"
-
-msgid "Task identifier"
-msgstr "Task identifier"
-
-msgid "Total tasks failed to resume"
-msgstr "Total tasks failed to resume"
-
-msgid "Failed tasks"
-msgstr "Failed tasks"
-
-msgid "Total tasks skipped"
-msgstr "Total tasks skipped"
-
-msgid "Skipped tasks"
-msgstr "Skipped tasks"
-
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 msgid "Last occurrence"
 msgstr ""
@@ -119,11 +43,29 @@ msgstr ""
 msgid "Please mention appropriate attribute value"
 msgstr ""
 
+msgid "ID"
+msgstr "ID"
+
+msgid "Cron line"
+msgstr "Cron line"
+
 msgid "Task count"
 msgstr ""
 
+msgid "Iteration"
+msgstr "Iteration"
+
+msgid "End time"
+msgstr "End time"
+
+msgid "State"
+msgstr "State"
+
 msgid "Purpose"
 msgstr ""
+
+msgid "Recurring logic cancelled."
+msgstr "Recurring logic cancelled."
 
 msgid "Could not cancel the recurring logic"
 msgstr ""
@@ -149,5 +91,53 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
+msgid "Show the progress of the task"
+msgstr "Show the progress of the task"
+
+msgid "Result"
+msgstr "Result"
+
+msgid "Started at"
+msgstr "Started at"
+
+msgid "Ended at"
+msgstr "Ended at"
+
 msgid "Duration"
 msgstr ""
+
+msgid "Owner"
+msgstr "Owner"
+
+msgid "Task errors"
+msgstr "Task errors"
+
+msgid "Resume all tasks paused in error state"
+msgstr "Resume all tasks paused in error state"
+
+msgid "Total tasks found paused in error state"
+msgstr "Total tasks found paused in error state"
+
+msgid "Total tasks resumed"
+msgstr "Total tasks resumed"
+
+msgid "Resumed tasks"
+msgstr "Resumed tasks"
+
+msgid "Task identifier"
+msgstr "Task identifier"
+
+msgid "Task action"
+msgstr "Task action"
+
+msgid "Total tasks failed to resume"
+msgstr "Total tasks failed to resume"
+
+msgid "Failed tasks"
+msgstr "Failed tasks"
+
+msgid "Total tasks skipped"
+msgstr "Total tasks skipped"
+
+msgid "Skipped tasks"
+msgstr "Skipped tasks"
