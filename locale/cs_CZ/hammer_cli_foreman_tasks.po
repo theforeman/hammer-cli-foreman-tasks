@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Pavel Borecki <pavel.borecki@gmail.com>, 2019
+# Pavel Borecki <pavel.borecki@gmail.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 15:19-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2019\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2023\n"
 "Language-Team: Czech (Czech Republic) (https://app.transifex.com/foreman/"
 "teams/114/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -23,83 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-msgid "ID"
-msgstr "Identifikátor"
-
-msgid "Cron line"
-msgstr "Řádek z plánovače kron"
-
-msgid "End time"
-msgstr ""
-
-msgid "Iteration"
-msgstr "Průchod"
-
-msgid "State"
-msgstr "Stav"
-
-msgid "Recurring logic cancelled."
-msgstr ""
-
-msgid "Could not cancel the recurring logic."
-msgstr ""
-
-msgid "Recurring logic related actions."
-msgstr ""
-
-msgid "Show the progress of the task"
-msgstr "Zobrazovat postup úlohy"
-
-msgid "Name"
-msgstr "Název"
-
-msgid "Owner"
-msgstr "Vlastník"
-
-msgid "Started at"
-msgstr "Zahájeno v"
-
-msgid "Ended at"
-msgstr "Skončilo v"
-
-msgid "Result"
-msgstr "Výsledek"
-
-msgid "Task action"
-msgstr "Akce úlohy"
-
-msgid "Task errors"
-msgstr "Chyby úlohy"
-
-msgid "Resume all tasks paused in error state"
-msgstr ""
-
-msgid "Total tasks found paused in error state"
-msgstr ""
-
-msgid "Total tasks resumed"
-msgstr ""
-
-msgid "Resumed tasks"
-msgstr ""
-
-msgid "Task identifier"
-msgstr "Identifikátor úlohy"
-
-msgid "Total tasks failed to resume"
-msgstr ""
-
-msgid "Failed tasks"
-msgstr "Nezdařené úlohy"
-
-msgid "Total tasks skipped"
-msgstr "Celkem přeskočeno úloh"
-
-msgid "Skipped tasks"
-msgstr "Přeskočené úlohy"
-
 msgid "Action"
-msgstr ""
+msgstr "Akce"
 
 msgid "Last occurrence"
 msgstr ""
@@ -119,10 +44,28 @@ msgstr ""
 msgid "Please mention appropriate attribute value"
 msgstr ""
 
+msgid "ID"
+msgstr "Identifikátor"
+
+msgid "Cron line"
+msgstr "Řádek z plánovače kron"
+
 msgid "Task count"
 msgstr ""
 
+msgid "Iteration"
+msgstr "Průchod"
+
+msgid "End time"
+msgstr ""
+
+msgid "State"
+msgstr "Stav"
+
 msgid "Purpose"
+msgstr ""
+
+msgid "Recurring logic cancelled."
 msgstr ""
 
 msgid "Could not cancel the recurring logic"
@@ -149,5 +92,53 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
+msgid "Show the progress of the task"
+msgstr "Zobrazovat postup úlohy"
+
+msgid "Result"
+msgstr "Výsledek"
+
+msgid "Started at"
+msgstr "Zahájeno v"
+
+msgid "Ended at"
+msgstr "Skončilo v"
+
 msgid "Duration"
 msgstr ""
+
+msgid "Owner"
+msgstr "Vlastník"
+
+msgid "Task errors"
+msgstr "Chyby úlohy"
+
+msgid "Resume all tasks paused in error state"
+msgstr ""
+
+msgid "Total tasks found paused in error state"
+msgstr ""
+
+msgid "Total tasks resumed"
+msgstr ""
+
+msgid "Resumed tasks"
+msgstr ""
+
+msgid "Task identifier"
+msgstr "Identifikátor úlohy"
+
+msgid "Task action"
+msgstr "Akce úlohy"
+
+msgid "Total tasks failed to resume"
+msgstr ""
+
+msgid "Failed tasks"
+msgstr "Nezdařené úlohy"
+
+msgid "Total tasks skipped"
+msgstr "Celkem přeskočeno úloh"
+
+msgid "Skipped tasks"
+msgstr "Přeskočené úlohy"

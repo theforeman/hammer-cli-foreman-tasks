@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Flamarion Jorge <jorge.flamarion@gmail.com>, 2017
 # Luiz Henrique Vasconcelos <luizvasconceloss@yahoo.com.br>, 2017
-# Bryan Kearney <bryan.kearney@gmail.com>, 2017
+# Bryan Kearney <bryan.kearney@gmail.com>, 2023
+# Flamarion Jorge <jorge.flamarion@gmail.com>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 15:19-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2017\n"
+"Last-Translator: Flamarion Jorge <jorge.flamarion@gmail.com>, 2023\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/foreman/"
 "teams/114/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -25,83 +25,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
 "1000000 == 0 ? 1 : 2;\n"
 
-msgid "ID"
-msgstr "ID"
-
-msgid "Cron line"
-msgstr "Cron line"
-
-msgid "End time"
-msgstr "Horário de finalização"
-
-msgid "Iteration"
-msgstr "Iteração"
-
-msgid "State"
-msgstr "Estado"
-
-msgid "Recurring logic cancelled."
-msgstr "Lógica recorrente cancelada. "
-
-msgid "Could not cancel the recurring logic."
-msgstr "Não foi possível cancelar a lógica recorrente."
-
-msgid "Recurring logic related actions."
-msgstr "Ações relacionadas à lógica recorrente. "
-
-msgid "Show the progress of the task"
-msgstr "Exibir o progresso da tarefa "
-
-msgid "Name"
-msgstr "Nome"
-
-msgid "Owner"
-msgstr "Proprietário"
-
-msgid "Started at"
-msgstr "Iniciado(a) em "
-
-msgid "Ended at"
-msgstr "Finalizado(a) em "
-
-msgid "Result"
-msgstr "Resultado"
-
-msgid "Task action"
-msgstr "Ação de tarefa "
-
-msgid "Task errors"
-msgstr "Erros de tarefa"
-
-msgid "Resume all tasks paused in error state"
-msgstr "Retomar todas as tarefas pausadas em estado de erro "
-
-msgid "Total tasks found paused in error state"
-msgstr "Total de tarefas pausadas em estado de erro"
-
-msgid "Total tasks resumed"
-msgstr "Total de tarefas retomadas "
-
-msgid "Resumed tasks"
-msgstr "Tarefas retomadas"
-
-msgid "Task identifier"
-msgstr "Identificador de tarefas"
-
-msgid "Total tasks failed to resume"
-msgstr "Total de tarefas que falharam ao serem retomadas"
-
-msgid "Failed tasks"
-msgstr "Tarefas com falhas "
-
-msgid "Total tasks skipped"
-msgstr "Total de tarefas ignoradas"
-
-msgid "Skipped tasks"
-msgstr "Tarefas ignoradas"
-
 msgid "Action"
-msgstr ""
+msgstr "Ação"
 
 msgid "Last occurrence"
 msgstr ""
@@ -116,16 +41,34 @@ msgid "Repeat until"
 msgstr ""
 
 msgid "Unlimited"
-msgstr ""
+msgstr "Ilimitado"
 
 msgid "Please mention appropriate attribute value"
 msgstr ""
 
+msgid "ID"
+msgstr "ID"
+
+msgid "Cron line"
+msgstr "Cron line"
+
 msgid "Task count"
 msgstr ""
 
+msgid "Iteration"
+msgstr "Iteração"
+
+msgid "End time"
+msgstr "Horário de finalização"
+
+msgid "State"
+msgstr "Estado"
+
 msgid "Purpose"
 msgstr ""
+
+msgid "Recurring logic cancelled."
+msgstr "Lógica recorrente cancelada. "
 
 msgid "Could not cancel the recurring logic"
 msgstr ""
@@ -151,5 +94,53 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
+msgid "Show the progress of the task"
+msgstr "Exibir o progresso da tarefa "
+
+msgid "Result"
+msgstr "Resultado"
+
+msgid "Started at"
+msgstr "Iniciado(a) em "
+
+msgid "Ended at"
+msgstr "Finalizado(a) em "
+
 msgid "Duration"
 msgstr ""
+
+msgid "Owner"
+msgstr "Proprietário"
+
+msgid "Task errors"
+msgstr "Erros de tarefa"
+
+msgid "Resume all tasks paused in error state"
+msgstr "Retomar todas as tarefas pausadas em estado de erro "
+
+msgid "Total tasks found paused in error state"
+msgstr "Total de tarefas pausadas em estado de erro"
+
+msgid "Total tasks resumed"
+msgstr "Total de tarefas retomadas "
+
+msgid "Resumed tasks"
+msgstr "Tarefas retomadas"
+
+msgid "Task identifier"
+msgstr "Identificador de tarefas"
+
+msgid "Task action"
+msgstr "Ação de tarefa "
+
+msgid "Total tasks failed to resume"
+msgstr "Total de tarefas que falharam ao serem retomadas"
+
+msgid "Failed tasks"
+msgstr "Tarefas com falhas "
+
+msgid "Total tasks skipped"
+msgstr "Total de tarefas ignoradas"
+
+msgid "Skipped tasks"
+msgstr "Tarefas ignoradas"

@@ -8,15 +8,17 @@
 # e93ed3aa97dec2eb31063731872555fc_1460a05 <71305a0095156d8e18373a5b7cfeb79e_8587>, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2017
 # Amit Upadhye <aupadhye@redhat.com>, 2022
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 15:19-0500\n"
+"POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud"
+"+transifex@kohlvanwijngaarden.nl>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/foreman/teams/114/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,83 +26,8 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "ID"
-msgstr "ID"
-
-msgid "Cron line"
-msgstr "cron 行"
-
-msgid "End time"
-msgstr "終了時間"
-
-msgid "Iteration"
-msgstr "繰り返し"
-
-msgid "State"
-msgstr "状態"
-
-msgid "Recurring logic cancelled."
-msgstr "再帰論理をキャンセル。"
-
-msgid "Could not cancel the recurring logic."
-msgstr "再帰論理をキャンセルできませんでした。"
-
-msgid "Recurring logic related actions."
-msgstr "再帰論理に関連したアクション。"
-
-msgid "Show the progress of the task"
-msgstr "タスクの進捗状況を表示"
-
-msgid "Name"
-msgstr "名前"
-
-msgid "Owner"
-msgstr "所有者"
-
-msgid "Started at"
-msgstr "開始時刻"
-
-msgid "Ended at"
-msgstr "終了時刻"
-
-msgid "Result"
-msgstr "結果"
-
-msgid "Task action"
-msgstr "タスクのアクション"
-
-msgid "Task errors"
-msgstr "タスクのエラー"
-
-msgid "Resume all tasks paused in error state"
-msgstr "エラー状態で一時停止しているタスクをすべて再開"
-
-msgid "Total tasks found paused in error state"
-msgstr "エラー状態で一時停止しているタスクの合計"
-
-msgid "Total tasks resumed"
-msgstr "再開されたタスクの合計"
-
-msgid "Resumed tasks"
-msgstr "再開されたタスク"
-
-msgid "Task identifier"
-msgstr "タスクの識別子"
-
-msgid "Total tasks failed to resume"
-msgstr "再開に失敗したタスクの合計"
-
-msgid "Failed tasks"
-msgstr "失敗したタスク"
-
-msgid "Total tasks skipped"
-msgstr "スキップされたタスクの合計"
-
-msgid "Skipped tasks"
-msgstr "スキップされたタスク"
-
 msgid "Action"
-msgstr ""
+msgstr "アクション"
 
 msgid "Last occurrence"
 msgstr ""
@@ -115,16 +42,34 @@ msgid "Repeat until"
 msgstr ""
 
 msgid "Unlimited"
-msgstr ""
+msgstr "無制限"
 
 msgid "Please mention appropriate attribute value"
 msgstr ""
 
+msgid "ID"
+msgstr "ID"
+
+msgid "Cron line"
+msgstr "cron 行"
+
 msgid "Task count"
 msgstr ""
 
+msgid "Iteration"
+msgstr "繰り返し"
+
+msgid "End time"
+msgstr "終了時間"
+
+msgid "State"
+msgstr "状態"
+
 msgid "Purpose"
 msgstr ""
+
+msgid "Recurring logic cancelled."
+msgstr "再帰論理をキャンセル。"
 
 msgid "Could not cancel the recurring logic"
 msgstr ""
@@ -150,5 +95,53 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
+msgid "Show the progress of the task"
+msgstr "タスクの進捗状況を表示"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Started at"
+msgstr "開始時刻"
+
+msgid "Ended at"
+msgstr "終了時刻"
+
 msgid "Duration"
-msgstr ""
+msgstr "期間"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Task errors"
+msgstr "タスクのエラー"
+
+msgid "Resume all tasks paused in error state"
+msgstr "エラー状態で一時停止しているタスクをすべて再開"
+
+msgid "Total tasks found paused in error state"
+msgstr "エラー状態で一時停止しているタスクの合計"
+
+msgid "Total tasks resumed"
+msgstr "再開されたタスクの合計"
+
+msgid "Resumed tasks"
+msgstr "再開されたタスク"
+
+msgid "Task identifier"
+msgstr "タスクの識別子"
+
+msgid "Task action"
+msgstr "タスクのアクション"
+
+msgid "Total tasks failed to resume"
+msgstr "再開に失敗したタスクの合計"
+
+msgid "Failed tasks"
+msgstr "失敗したタスク"
+
+msgid "Total tasks skipped"
+msgstr "スキップされたタスクの合計"
+
+msgid "Skipped tasks"
+msgstr "スキップされたタスク"
