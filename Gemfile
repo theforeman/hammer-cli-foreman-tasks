@@ -6,7 +6,7 @@ gem 'gettext', '>= 3.1.3', '< 4.0.0'
 gem 'psych' # requiring psych to workaround issues with bundler 1.11.0, see https://github.com/bundler/bundler/issues/4149
 
 group :test do
-  gem 'rake', '~> 10.1.0'
+  gem 'rake', '~> 13.1.0'
   gem 'thor'
   gem 'minitest', '4.7.4'
   gem 'minitest-spec-context'
