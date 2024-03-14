@@ -72,7 +72,7 @@ module HammerCLIForemanTasks
     end
 
     def appropriate_verbosity?
-      @options[:verbosity] >= HammerCLI::V_VERBOSE
+      @options[:verbosity] >= HammerCLI::V_VERBOSE && @options[:adapter] == 'base'
     end
   end
 end
