@@ -4,7 +4,7 @@ module HammerCLIForemanTasks
     def task_progress(task_or_id)
       task_id = task_or_id.is_a?(Hash) ? task_or_id['id'] : task_or_id
       if !task_id.empty?
-        options = { verbosity: @context[:verbosity] || HammerCLI::V_VERBOSE }
+        options = { verbosity: @context[:verbosity] || HammerCLI::V_VERBOSE, adapter: (@context[:adapter] || :base).to_s }
         task_progress = TaskProgress.new(task_id, options) { |id| load_task(id) }
         task_progress.render
         task_progress.success?
