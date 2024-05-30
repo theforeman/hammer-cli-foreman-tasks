@@ -10,7 +10,7 @@ module HammerCLIForemanTasks
 
     module ActionField
       def extend_data(task)
-        task["action"] = [task["humanized"]["action"], task["humanized"]["input"]].join(' ')
+        task["action"] = [task["humanized"]&.dig("action"), task["humanized"]&.dig("input")].join(' ')
         task
       end
     end
@@ -82,7 +82,6 @@ module HammerCLIForemanTasks
     class ResumeCommand < HammerCLIForeman::InfoCommand
       action :bulk_resume
 
-
       command_name "resume"
       desc _("Resume all tasks paused in error state")
 
@@ -118,9 +117,9 @@ module HammerCLIForemanTasks
       end
 
       def extend_data(data)
-        data["total_resumed"] = data["resumed"].length
-        data["total_failed"] = data["failed"].length
-        data["total_skipped"] = data["skipped"].length
+        data["total_resumed"] = data["resumed"]&.length || 0
+        data["total_failed"] = data["failed"]&.length || 0
+        data["total_skipped"] = data["skipped"]&.length || 0
         data
       end
 
