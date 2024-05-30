@@ -1,6 +1,5 @@
 module HammerCLIForemanTasks
   class Task < HammerCLIForeman::Command
-
     resource :foreman_tasks
 
     module WithoutNameOption
@@ -17,7 +16,6 @@ module HammerCLIForemanTasks
     end
 
     class ProgressCommand < HammerCLIForeman::Command
-
       include HammerCLIForemanTasks::Helper
 
       action :show
@@ -35,7 +33,6 @@ module HammerCLIForemanTasks
         success = task_progress(option_id)
         success ? HammerCLI::EX_OK : HammerCLI::EX_SOFTWARE
       end
-
     end
 
     class ListCommand < HammerCLIForeman::ListCommand
