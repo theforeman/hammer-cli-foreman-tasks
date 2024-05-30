@@ -1,0 +1,17 @@
+inherit_from: .rubocop_todo.yml
+
+inherit_gem:
+  theforeman-rubocop:
+    - default.yml
+
+Metrics:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/HashSyntax:
+  Enabled: false

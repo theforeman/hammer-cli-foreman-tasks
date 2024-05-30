@@ -4,7 +4,6 @@ module HammerCLIForemanTasks
   module I18n
 
     class LocaleDomain < HammerCLI::I18n::LocaleDomain
-
       def translated_files
         Dir.glob(File.join(File.dirname(__FILE__), '../**/*.rb'))
       end

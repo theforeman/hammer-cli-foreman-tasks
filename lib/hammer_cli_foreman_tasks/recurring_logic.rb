@@ -34,7 +34,7 @@ module HammerCLIForemanTasks
       failure_message _('Could not cancel the recurring logic')
       build_options
     end
-    
+
     class DeleteCommand < HammerCLIForeman::DeleteCommand
       action :bulk_destroy
 
