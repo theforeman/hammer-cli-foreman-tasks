@@ -7,15 +7,17 @@
 # mbacovsky <martin.bacovsky@gmail.com>, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2017
 # Amit Upadhye <aupadhye@redhat.com>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.21\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden "
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
 "zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -28,22 +30,22 @@ msgid "Action"
 msgstr "操作"
 
 msgid "Last occurrence"
-msgstr ""
+msgstr "最后一次发生"
 
 msgid "Next occurrence"
-msgstr ""
+msgstr "下次发生"
 
 msgid "Iteration limit"
-msgstr ""
+msgstr "重述限制"
 
 msgid "Repeat until"
-msgstr ""
+msgstr "重复直到"
 
 msgid "Unlimited"
-msgstr ""
+msgstr "无限制"
 
 msgid "Please mention appropriate attribute value"
-msgstr ""
+msgstr "请说明适当的属性值"
 
 msgid "ID"
 msgstr "ID"
@@ -52,7 +54,7 @@ msgid "Cron line"
 msgstr "Cron 行"
 
 msgid "Task count"
-msgstr ""
+msgstr "任务计数"
 
 msgid "Iteration"
 msgstr "重述"
@@ -64,34 +66,34 @@ msgid "State"
 msgstr "状态"
 
 msgid "Purpose"
-msgstr ""
+msgstr "目的"
 
 msgid "Recurring logic cancelled."
 msgstr "取消重复逻辑。"
 
 msgid "Could not cancel the recurring logic"
-msgstr ""
+msgstr "无法取消重复逻辑"
 
 msgid "Only delete cancelled recurring logics"
-msgstr ""
+msgstr "只删除取消的重复逻辑"
 
 msgid "Only delete finished recurring logics"
-msgstr ""
+msgstr "只删除完成的重复逻辑"
 
 msgid "Delete all recuring logics filtered by the arguments"
-msgstr ""
+msgstr "删除所有按参数过滤的逻辑"
 
 msgid "Could not delete recurring logics"
-msgstr ""
+msgstr "无法删除重复发生的逻辑"
 
 msgid "The following recurring logics deleted:"
-msgstr ""
+msgstr "以下重复逻辑已删除："
 
 msgid "No recurring logics deleted."
-msgstr ""
+msgstr "没有删除重复逻辑。"
 
 msgid "Recurring logic related actions"
-msgstr ""
+msgstr "重复逻辑相关的操作"
 
 msgid "Show the progress of the task"
 msgstr "顯示任務的進度"
@@ -106,7 +108,7 @@ msgid "Ended at"
 msgstr "結束於"
 
 msgid "Duration"
-msgstr ""
+msgstr "持续时间"
 
 msgid "Owner"
 msgstr "所有者"

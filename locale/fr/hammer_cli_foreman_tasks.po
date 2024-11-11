@@ -8,15 +8,17 @@
 # Amit Upadhye <aupadhye@redhat.com>, 2023
 # Claer <transiblu@claer.hammock.fr>, 2023
 # 21966816214bc546c1fc8a185e75ca1c, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.21\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: 21966816214bc546c1fc8a185e75ca1c, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden "
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,22 +31,22 @@ msgid "Action"
 msgstr "Action"
 
 msgid "Last occurrence"
-msgstr ""
+msgstr "Dernière occurrence"
 
 msgid "Next occurrence"
-msgstr ""
+msgstr "Prochaine occurrence"
 
 msgid "Iteration limit"
-msgstr ""
+msgstr "Limite de l'itération"
 
 msgid "Repeat until"
-msgstr ""
+msgstr "Répéter jusqu'à"
 
 msgid "Unlimited"
 msgstr "Illimité"
 
 msgid "Please mention appropriate attribute value"
-msgstr ""
+msgstr "Veuillez mentionner la valeur d'attribut appropriée"
 
 msgid "ID"
 msgstr "ID"
@@ -53,7 +55,7 @@ msgid "Cron line"
 msgstr "Ligne Cron"
 
 msgid "Task count"
-msgstr ""
+msgstr "Nombre de tâches"
 
 msgid "Iteration"
 msgstr "Itération"
@@ -65,34 +67,34 @@ msgid "State"
 msgstr "État"
 
 msgid "Purpose"
-msgstr ""
+msgstr "Objectif"
 
 msgid "Recurring logic cancelled."
 msgstr "Logique récurrente annulée."
 
 msgid "Could not cancel the recurring logic"
-msgstr ""
+msgstr "N'a pas pu annuler la logique récurrente."
 
 msgid "Only delete cancelled recurring logics"
-msgstr ""
+msgstr "Supprimer uniquement les logiques récurrentes annulées"
 
 msgid "Only delete finished recurring logics"
-msgstr ""
+msgstr "Supprimer uniquement les logiques récurrentes terminées"
 
 msgid "Delete all recuring logics filtered by the arguments"
-msgstr ""
+msgstr "Supprimer toutes les logiques récurrentes filtrées par les arguments"
 
 msgid "Could not delete recurring logics"
-msgstr ""
+msgstr "Impossible de supprimer les logiques récurrentes"
 
 msgid "The following recurring logics deleted:"
-msgstr ""
+msgstr "Les logiques récurrentes suivantes ont été supprimées :"
 
 msgid "No recurring logics deleted."
-msgstr ""
+msgstr "Aucune logique récurrente supprimée."
 
 msgid "Recurring logic related actions"
-msgstr ""
+msgstr "Logique récurrenteActions liées à la logique récurrente."
 
 msgid "Show the progress of the task"
 msgstr "Afficher le progrès de la tâche"
@@ -107,7 +109,7 @@ msgid "Ended at"
 msgstr "Terminé à"
 
 msgid "Duration"
-msgstr ""
+msgstr "Durée"
 
 msgid "Owner"
 msgstr "Propriétaire"
