@@ -8,17 +8,17 @@
 # e93ed3aa97dec2eb31063731872555fc_1460a05 <71305a0095156d8e18373a5b7cfeb79e_8587>, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2017
 # Amit Upadhye <aupadhye@redhat.com>, 2022
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.21\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud"
-"+transifex@kohlvanwijngaarden.nl>, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden "
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/foreman/teams/114/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,22 +30,22 @@ msgid "Action"
 msgstr "アクション"
 
 msgid "Last occurrence"
-msgstr ""
+msgstr "最後の実行"
 
 msgid "Next occurrence"
-msgstr ""
+msgstr "次の実行"
 
 msgid "Iteration limit"
-msgstr ""
+msgstr "繰り返し制限"
 
 msgid "Repeat until"
-msgstr ""
+msgstr "繰り返し"
 
 msgid "Unlimited"
 msgstr "無制限"
 
 msgid "Please mention appropriate attribute value"
-msgstr ""
+msgstr "適切な属性値を記述してください"
 
 msgid "ID"
 msgstr "ID"
@@ -54,7 +54,7 @@ msgid "Cron line"
 msgstr "cron 行"
 
 msgid "Task count"
-msgstr ""
+msgstr "タスク数"
 
 msgid "Iteration"
 msgstr "繰り返し"
@@ -66,34 +66,34 @@ msgid "State"
 msgstr "状態"
 
 msgid "Purpose"
-msgstr ""
+msgstr "目的"
 
 msgid "Recurring logic cancelled."
 msgstr "再帰論理をキャンセル。"
 
 msgid "Could not cancel the recurring logic"
-msgstr ""
+msgstr "再帰論理をキャンセルできませんでした"
 
 msgid "Only delete cancelled recurring logics"
-msgstr ""
+msgstr "キャンセルされた再帰論理のみ削除"
 
 msgid "Only delete finished recurring logics"
-msgstr ""
+msgstr "終了した再帰論理のみ削除"
 
 msgid "Delete all recuring logics filtered by the arguments"
-msgstr ""
+msgstr "引数でフィルタリングされたすべての再帰論理を削除"
 
 msgid "Could not delete recurring logics"
-msgstr ""
+msgstr "再帰論理を削除できませんでした"
 
 msgid "The following recurring logics deleted:"
-msgstr ""
+msgstr "次の再帰論理が削除されました:"
 
 msgid "No recurring logics deleted."
-msgstr ""
+msgstr "削除された再帰論理はありません。"
 
 msgid "Recurring logic related actions"
-msgstr ""
+msgstr "再帰論理関連のアクション"
 
 msgid "Show the progress of the task"
 msgstr "タスクの進捗状況を表示"

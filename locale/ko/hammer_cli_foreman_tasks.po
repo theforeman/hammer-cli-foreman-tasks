@@ -7,15 +7,17 @@
 # mbacovsky <martin.bacovsky@gmail.com>, 2017
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.21\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden "
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,22 +29,22 @@ msgid "Action"
 msgstr "동작 "
 
 msgid "Last occurrence"
-msgstr ""
+msgstr "마지막 발생"
 
 msgid "Next occurrence"
-msgstr ""
+msgstr "다음 발생"
 
 msgid "Iteration limit"
-msgstr ""
+msgstr "반복 제한"
 
 msgid "Repeat until"
-msgstr ""
+msgstr "다음까지 반복"
 
 msgid "Unlimited"
 msgstr "제한 없음 "
 
 msgid "Please mention appropriate attribute value"
-msgstr ""
+msgstr "적절한 속성 값을 알려 주세요."
 
 msgid "ID"
 msgstr "ID"
@@ -51,7 +53,7 @@ msgid "Cron line"
 msgstr "Cron 줄"
 
 msgid "Task count"
-msgstr ""
+msgstr "작업 수"
 
 msgid "Iteration"
 msgstr "반복"
@@ -63,34 +65,34 @@ msgid "State"
 msgstr "상태 "
 
 msgid "Purpose"
-msgstr ""
+msgstr "목적"
 
 msgid "Recurring logic cancelled."
 msgstr "반복 로직이 취소되었습니다."
 
 msgid "Could not cancel the recurring logic"
-msgstr ""
+msgstr "반복되는 논리를 취소할 수 없습니다."
 
 msgid "Only delete cancelled recurring logics"
-msgstr ""
+msgstr "취소된 반복 논리만 삭제합니다."
 
 msgid "Only delete finished recurring logics"
-msgstr ""
+msgstr "완료된 반복 논리만 삭제합니다."
 
 msgid "Delete all recuring logics filtered by the arguments"
-msgstr ""
+msgstr "인수로 필터링된 모든 반복 논리를 삭제합니다."
 
 msgid "Could not delete recurring logics"
-msgstr ""
+msgstr "반복되는 논리를 삭제할 수 없습니다."
 
 msgid "The following recurring logics deleted:"
-msgstr ""
+msgstr "다음 반복되는 논리가 삭제되었습니다."
 
 msgid "No recurring logics deleted."
-msgstr ""
+msgstr "반복되는 논리가 삭제되지 않았습니다."
 
 msgid "Recurring logic related actions"
-msgstr ""
+msgstr "반복되는 논리 관련 작업"
 
 msgid "Show the progress of the task"
 msgstr "태스크 진행률 표시"

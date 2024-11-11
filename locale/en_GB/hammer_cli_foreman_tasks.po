@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Andi Chandler <andi@gowling.com>, 2023
+# Andi Chandler <andi@gowling.com>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.21\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
-"Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2024\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/foreman/"
 "teams/114/en_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -26,22 +26,22 @@ msgid "Action"
 msgstr "Action"
 
 msgid "Last occurrence"
-msgstr ""
+msgstr "Last occurrence"
 
 msgid "Next occurrence"
-msgstr ""
+msgstr "Next occurrence"
 
 msgid "Iteration limit"
-msgstr ""
+msgstr "Iteration limit"
 
 msgid "Repeat until"
-msgstr ""
+msgstr "Repeat until"
 
 msgid "Unlimited"
-msgstr ""
+msgstr "Unlimited"
 
 msgid "Please mention appropriate attribute value"
-msgstr ""
+msgstr "Please mention appropriate attribute value"
 
 msgid "ID"
 msgstr "ID"
@@ -50,7 +50,7 @@ msgid "Cron line"
 msgstr "Cron line"
 
 msgid "Task count"
-msgstr ""
+msgstr "Task count"
 
 msgid "Iteration"
 msgstr "Iteration"
@@ -62,34 +62,34 @@ msgid "State"
 msgstr "State"
 
 msgid "Purpose"
-msgstr ""
+msgstr "Purpose"
 
 msgid "Recurring logic cancelled."
 msgstr "Recurring logic cancelled."
 
 msgid "Could not cancel the recurring logic"
-msgstr ""
+msgstr "Could not cancel the recurring logic"
 
 msgid "Only delete cancelled recurring logics"
-msgstr ""
+msgstr "Only delete cancelled recurring logics"
 
 msgid "Only delete finished recurring logics"
-msgstr ""
+msgstr "Only delete finished recurring logics"
 
 msgid "Delete all recuring logics filtered by the arguments"
-msgstr ""
+msgstr "Delete all recuring logics filtered by the arguments"
 
 msgid "Could not delete recurring logics"
-msgstr ""
+msgstr "Could not delete recurring logics"
 
 msgid "The following recurring logics deleted:"
-msgstr ""
+msgstr "The following recurring logics deleted:"
 
 msgid "No recurring logics deleted."
-msgstr ""
+msgstr "No recurring logics deleted."
 
 msgid "Recurring logic related actions"
-msgstr ""
+msgstr "Recurring logic related actions"
 
 msgid "Show the progress of the task"
 msgstr "Show the progress of the task"
@@ -104,7 +104,7 @@ msgid "Ended at"
 msgstr "Ended at"
 
 msgid "Duration"
-msgstr ""
+msgstr "Duration"
 
 msgid "Owner"
 msgstr "Owner"
