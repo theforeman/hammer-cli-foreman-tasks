@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Sergio Ocón-Cárdenas <sergio.ocon@redhat.com>, 2017
+# Sergio Ocón-Cárdenas, 2017
 # Gustavo Varela <gustavo.varela@gmail.com>, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2023
 # Carmela Rubiños <carmela.rubinos@gmail.com>, 2023
