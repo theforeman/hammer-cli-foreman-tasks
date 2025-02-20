@@ -1,5 +1,5 @@
 module HammerCLIForemanTasks
   def self.version
-    @version ||= Gem::Version.new('0.0.21')
+    @version ||= Gem::Version.new('0.0.22')
   end
 end
