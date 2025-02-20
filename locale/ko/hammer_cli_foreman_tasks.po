@@ -7,7 +7,7 @@
 # mbacovsky <martin.bacovsky@gmail.com>, 2017
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2017
 # Bryan Kearney <bryan.kearney@gmail.com>, 2023
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
 #
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "POT-Creation-Date: 2023-07-12 16:44+0000\n"
 "PO-Revision-Date: 2017-09-11 13:45+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
-"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,16 +29,16 @@ msgid "Action"
 msgstr "동작 "
 
 msgid "Last occurrence"
-msgstr "마지막 발생"
+msgstr "마지막 반복"
 
 msgid "Next occurrence"
-msgstr "다음 발생"
+msgstr "다음 반복"
 
 msgid "Iteration limit"
 msgstr "반복 제한"
 
 msgid "Repeat until"
-msgstr "다음까지 반복"
+msgstr "반복 기한"
 
 msgid "Unlimited"
 msgstr "제한 없음 "
@@ -53,7 +53,7 @@ msgid "Cron line"
 msgstr "Cron 줄"
 
 msgid "Task count"
-msgstr "작업 수"
+msgstr "태스크 수"
 
 msgid "Iteration"
 msgstr "반복"
@@ -98,7 +98,7 @@ msgid "Show the progress of the task"
 msgstr "태스크 진행률 표시"
 
 msgid "Result"
-msgstr "결과"
+msgstr "결과 "
 
 msgid "Started at"
 msgstr "시작 일시"
