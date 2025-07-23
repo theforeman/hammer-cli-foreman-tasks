@@ -8,13 +8,6 @@ module HammerCLIForemanTasks
       end
     end
 
-    module ActionField
-      def extend_data(task)
-        task["action"] = [task["humanized"]["action"], task["humanized"]["input"]].join(' ')
-        task
-      end
-    end
-
     class ProgressCommand < HammerCLIForeman::Command
       include HammerCLIForemanTasks::Helper
 
@@ -37,7 +30,6 @@ module HammerCLIForemanTasks
 
     class ListCommand < HammerCLIForeman::ListCommand
       extend WithoutNameOption
-      include ActionField
 
       output do
         field :id, _('ID')
@@ -59,7 +51,6 @@ module HammerCLIForemanTasks
 
     class InfoCommand < HammerCLIForeman::InfoCommand
       extend WithoutNameOption
-      include ActionField
 
       output do
         field :id, _('ID')
