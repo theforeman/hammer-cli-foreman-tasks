@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_tasks 0.0.19\n"
+"Project-Id-Version: hammer_cli_foreman_tasks 0.0.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 16:44+0000\n"
-"PO-Revision-Date: 2023-07-12 16:44+0000\n"
+"POT-Creation-Date: 2025-07-28 14:41+0000\n"
+"PO-Revision-Date: 2025-07-28 14:41+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,8 +20,8 @@ msgstr ""
 
 #: ../lib/hammer_cli_foreman_tasks/command_extensions/recurring_logic.rb:16
 #: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:10
-#: ../lib/hammer_cli_foreman_tasks/task.rb:47
-#: ../lib/hammer_cli_foreman_tasks/task.rb:69
+#: ../lib/hammer_cli_foreman_tasks/task.rb:36
+#: ../lib/hammer_cli_foreman_tasks/task.rb:57
 msgid "Action"
 msgstr ""
 
@@ -53,8 +53,8 @@ msgid "Please mention appropriate attribute value"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:7
-#: ../lib/hammer_cli_foreman_tasks/task.rb:46
-#: ../lib/hammer_cli_foreman_tasks/task.rb:68
+#: ../lib/hammer_cli_foreman_tasks/task.rb:35
+#: ../lib/hammer_cli_foreman_tasks/task.rb:56
 msgid "ID"
 msgstr ""
 
@@ -75,8 +75,8 @@ msgid "End time"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_tasks/recurring_logic.rb:16
-#: ../lib/hammer_cli_foreman_tasks/task.rb:48
-#: ../lib/hammer_cli_foreman_tasks/task.rb:70
+#: ../lib/hammer_cli_foreman_tasks/task.rb:37
+#: ../lib/hammer_cli_foreman_tasks/task.rb:58
 msgid "State"
 msgstr ""
 
@@ -120,83 +120,83 @@ msgstr ""
 msgid "Recurring logic related actions"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:32
+#: ../lib/hammer_cli_foreman_tasks/task.rb:23
 msgid "Show the progress of the task"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:49
-#: ../lib/hammer_cli_foreman_tasks/task.rb:71
+#: ../lib/hammer_cli_foreman_tasks/task.rb:38
+#: ../lib/hammer_cli_foreman_tasks/task.rb:59
 msgid "Result"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:50
-#: ../lib/hammer_cli_foreman_tasks/task.rb:72
+#: ../lib/hammer_cli_foreman_tasks/task.rb:39
+#: ../lib/hammer_cli_foreman_tasks/task.rb:60
 msgid "Started at"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:51
-#: ../lib/hammer_cli_foreman_tasks/task.rb:73
+#: ../lib/hammer_cli_foreman_tasks/task.rb:40
+#: ../lib/hammer_cli_foreman_tasks/task.rb:61
 msgid "Ended at"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:52
-#: ../lib/hammer_cli_foreman_tasks/task.rb:74
+#: ../lib/hammer_cli_foreman_tasks/task.rb:41
+#: ../lib/hammer_cli_foreman_tasks/task.rb:62
 msgid "Duration"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:53
-#: ../lib/hammer_cli_foreman_tasks/task.rb:75
+#: ../lib/hammer_cli_foreman_tasks/task.rb:42
+#: ../lib/hammer_cli_foreman_tasks/task.rb:63
 msgid "Owner"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:56
-#: ../lib/hammer_cli_foreman_tasks/task.rb:78
-#: ../lib/hammer_cli_foreman_tasks/task.rb:100
-#: ../lib/hammer_cli_foreman_tasks/task.rb:109
-#: ../lib/hammer_cli_foreman_tasks/task.rb:118
+#: ../lib/hammer_cli_foreman_tasks/task.rb:45
+#: ../lib/hammer_cli_foreman_tasks/task.rb:66
+#: ../lib/hammer_cli_foreman_tasks/task.rb:88
+#: ../lib/hammer_cli_foreman_tasks/task.rb:97
+#: ../lib/hammer_cli_foreman_tasks/task.rb:106
 msgid "Task errors"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:90
+#: ../lib/hammer_cli_foreman_tasks/task.rb:78
 msgid "Resume all tasks paused in error state"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:93
+#: ../lib/hammer_cli_foreman_tasks/task.rb:81
 msgid "Total tasks found paused in error state"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:95
+#: ../lib/hammer_cli_foreman_tasks/task.rb:83
 msgid "Total tasks resumed"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:96
+#: ../lib/hammer_cli_foreman_tasks/task.rb:84
 msgid "Resumed tasks"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:97
-#: ../lib/hammer_cli_foreman_tasks/task.rb:106
-#: ../lib/hammer_cli_foreman_tasks/task.rb:115
+#: ../lib/hammer_cli_foreman_tasks/task.rb:85
+#: ../lib/hammer_cli_foreman_tasks/task.rb:94
+#: ../lib/hammer_cli_foreman_tasks/task.rb:103
 msgid "Task identifier"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:99
-#: ../lib/hammer_cli_foreman_tasks/task.rb:108
-#: ../lib/hammer_cli_foreman_tasks/task.rb:117
+#: ../lib/hammer_cli_foreman_tasks/task.rb:87
+#: ../lib/hammer_cli_foreman_tasks/task.rb:96
+#: ../lib/hammer_cli_foreman_tasks/task.rb:105
 msgid "Task action"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:104
+#: ../lib/hammer_cli_foreman_tasks/task.rb:92
 msgid "Total tasks failed to resume"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:105
+#: ../lib/hammer_cli_foreman_tasks/task.rb:93
 msgid "Failed tasks"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:113
+#: ../lib/hammer_cli_foreman_tasks/task.rb:101
 msgid "Total tasks skipped"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_tasks/task.rb:114
+#: ../lib/hammer_cli_foreman_tasks/task.rb:102
 msgid "Skipped tasks"
 msgstr ""
