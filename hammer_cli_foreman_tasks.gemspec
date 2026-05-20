@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{lib,config,locale}/**/*", "LICENSE", "README.md"]
   s.require_paths = ["lib"]
 
-  s.add_dependency "hammer_cli_foreman", "> 0.1.1", "< 4.0.0"
+  s.add_dependency "hammer_cli_foreman", "> 0.1.1", "< 6.0.0"
   s.add_dependency "powerbar", ">= 1.0.11", "< 3.0"
 end
